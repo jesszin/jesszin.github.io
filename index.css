@@ -38,7 +38,7 @@
 .mainPage{
 	width:100%;
 	height: auto;
-	background:url('pcbg.jpg') no-repeat center center;
+	background:url('pcbg.jpg') no-repeat center center !important;
 	background-attachment: fixed;
 	background-size:cover;}
 
