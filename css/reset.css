@@ -1,0 +1,6 @@
+body,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dd,dt,p,div,header,section,footer,img,article,form,fieldset,select,a{ margin:0; padding:0;}
+img{ vertical-align:middle; border:none;}
+a{ text-decoration:none;}
+li{ list-style:none;}
+input,textarea,select{ vertical-align:middle;}
+
