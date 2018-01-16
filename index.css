@@ -38,7 +38,7 @@
 .mainPage{
 	width:100%;
 	height: auto;
-	background:url('../img/pcbg.jpg') no-repeat center center;
+	background:url('pcbg.jpg') no-repeat center center;
 	background-attachment: fixed;
 	background-size:cover;}
 
@@ -152,7 +152,7 @@
 	content: "";
 	width:45px;
 	height:2px;
-	background:#333;
+	background-color:#333;
 	margin:20px auto 50px;
 }
 .mainPage .main-about-wrap{
