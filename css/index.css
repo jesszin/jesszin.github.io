@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/*font-family: 'Raleway', sans-serif;*/
+*{
+	margin:0;
+	padding:0;
+}
+
+/*main Intro*/
+.mainPage{
+	width:100%;
+	height: auto;
+	background:url('../img/pcbg.jpg') no-repeat center center;
+	background-attachment: fixed;
+	background-size:cover;}
+
+.mainPage .row::before{
+	content:"";
+	display: table;
+}
+.mainPage .row::after{
+	clear:both;
+}
+.mainPage .main-intro{
+	width:100%;
+	padding-top:220px;
+	text-align: center;
+	margin:0 -15px !important;
+}
+.mainPage .main-intro>h1{
+	width:320px;
+	display: inline-block;
+	font-family: 'Raleway';
+	font-size: 3.3em;
+	font-weight: bold;
+	letter-spacing: 5px;
+	word-spacing: 4px;
+	color:#333;
+	/*typing effect*/
+	margin-bottom:10px;
+
+}
+
+.mainPage .main-intro>h2{
+	font-family: 'Raleway';
+	font-size:2em;
+	color:#333;
+	word-spacing: 4px;
+}
+.mainPage .main-intro>h2::after{
+	display: block;
+	content: "";
+	width:45px;
+	height:2px;
+	background:#333;
+	margin:20px auto 50px;
+}
+.mainPage .main-about-wrap{
+	margin-right: 15px !important;
+	margin-left: 15px !important;
+}
+.mainPage .main-button{
+	padding-bottom:130px;
+}
+.mainPage .main-button>span{
+	display: block;
+	width:230px;
+	padding:10px 30px;
+	border:1px solid #ddd;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-o-border-radius: 4px;
+	margin:0 auto;
+	text-align: center;
+	font-size:1.2em;
+	font-family: 'Raleway';
+	color:#ddd;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+
+
+.mainPortfolio{
+	width:100%;
+	height: auto;
+	background:#dcc6af;
+	position: relative;
+}
+.mainPortfolio .portfolio-bg{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+}
+.mainPortfolio .portfolio-bg>li{
+	display: block;
+	height: inherit;
+	float: left;
+	z-index:1;
+}
+.mainPortfolio .portfolio-bg li:first-child{
+	width:70%;
+	height: 100%;
+	background:#dcc6af;
+	z-index:2;
+	transform: skewX(30deg);
+	position: relative;
+	left:160px;
+}
+.mainPortfolio .portfolio-bg li:last-child{
+	width:30%;
+	background:#706c69;
+}
+
+.mainPortfolio .container{
+	z-index:9999;
+}
+
+.mainPortfolio .port-wrap{
+	width:100%;
+	height: auto;
+	padding-bottom: 95px;
+}
+.mainPortfolio .port-wrap ul{
+	margin-top:-40px;
+}
+.mainPortfolio .port-wrap ul li{
+	padding:0;
+	position:relative;
+	z-index: 10;
+}
+.mainPortfolio .port-wrap .port-img{
+	z-index:10;
+}
+.mainPortfolio .port-wrap .port-img>img{
+	width:100%;
+	height:250px;
+	transition:all 0.2s linear;
+	-webkit-transition:all 0.2s linear;
+	-moz-transition:all 0.2s linear;
+	-o-transition:all 0.2s linear;
+}
+
+.mainPortfolio .port-wrap .port-overlay{
+	z-index:20px;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 250px;
+	background:rgba(0,0,0,0);
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+
+
+.mainPortfolio .port-wrap .port-overlay>a{
+	display: inline-block;
+	width:100%;
+	height:100%;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Raleway';
+	letter-spacing: 2px;
+	color:#fff;
+}
+.mainPortfolio .port-wrap .port-overlay a>span{
+	display:block;
+
+}
+.mainPortfolio .port-wrap .port-overlay a>span:first-child{
+	margin-top:80px;
+	font-size: 1.6em;
+	font-weight: bold;
+	transform: translateY(-110px);
+	opacity: 0;
+	transition:all 0.2s ease;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+}
+.mainPortfolio .port-wrap .port-overlay a>span:last-child{
+	transform: translateY(120px);
+	opacity: 0;
+	transition:all 0.2s ease;
+	-webkit-transition:all 0.2s ease;
+	-moz-transition:all 0.2s ease;
+	-o-transition:all 0.2s ease;
+}
+
+.mainPortfolio .port-wrap .port-overlay a>span:first-child::after{
+	display: block;
+	content:"";
+	width:15px;
+	height:2px;
+	margin:10px auto;
+	background:#f99;
+}
+
+footer{
+	width:100%;
+	height:auto;
+	font-family: 'Raleway';
+	color:#fff;
+	position: relative;
+	background:#706c69;
+	z-index: 1;
+}
+footer .ft-bg{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 1;
+}
+
+
+footer>p{
+	width: 100%;
+	display:inline-block;
+	text-align: center;
+	letter-spacing: 2px;
+	z-index: 9999;
+}
+
+footer .touch{
+	display: block;
+	font-size: 2em;
+	font-weight: 600;
+	padding-top:30px;
+	z-index: 100;
+}
+footer .touch::after{
+	display: block;
+	content:"";
+	width:40px;
+	height:3px;
+	background:#fff;
+	margin:20px auto;
+	z-index: 100;
+}
+footer .copy{
+	font-size: 1em;
+	padding:20px 0;
+	z-index: 100;
+}
+footer .ft-info{
+	width:60%;
+	height: auto;
+	margin:0 auto;
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100;
+}
+footer .ft-info li{
+	text-align: center;
+	margin:3vh 0;
+	letter-spacing: 2px;
+	z-index: 100;
+}
+footer .ft-info li>img{
+	margin-bottom: 15px;
+	z-index: 100;
+}
+
+/*hover*/
+.mainPortfolio .port-wrap ul li:hover .port-overlay{
+	background:rgba(0,0,0,0.6);
+	transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
+
+.mainPortfolio .port-wrap .port-overlay a:hover span{
+	transform: translateY(0px);
+	opacity: 1;
+}
+.mainPortfolio .port-wrap .port-overlay a:hover span:first-child{
+	transition-delay: 0.1s;
+	-webkit-transition-delay: 0.1s;
+	-moz-transition-delay: 0.1s;
+	-o-transition-delay: 0.1s;
+}
+.mainPortfolio .port-wrap .port-overlay a:hover span:last-child{
+	transition-delay: 0.15s;
+	-webkit-transition-delay: 0.15s;
+	-moz-transition-delay: 0.15s;
+	-o-transition-delay: 0.15s;
+}
+.mainPage .main-button>span:hover{
+	color:#f99;
+	border:1px solid #f99;
+	transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+}
