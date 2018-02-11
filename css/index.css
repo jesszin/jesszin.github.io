@@ -1,305 +1,368 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-/*font-family: 'Raleway', sans-serif;*/
-*{
-	margin:0;
-	padding:0;
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+/*font-family: 'Josefin Sans', sans-serif; 영어폰트*/
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+/*font-family: 'Varela Round', sans-serif; 슬라이드 폰트*/
+
+@media all and (min-width:768px) {
+    #main-page {
+        width: 100%;
+        height: 100vh;
+        background:url(/img/bghead.jpg) no-repeat center fixed;
+        background-size: cover;
+        z-index: 1;
+    }
+    #main-page .main-mask{
+        background: url(/img/pattern.png);
+        width:100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    #main-page .main-slide{
+        width: 100%;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        background: transparent;
+    }
+    #main-page .main-slide h1>img{
+        max-width: 100%;
+        display: block;
+        margin:0 auto;
+    }
+    #main-page .main-slide ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:15px;
+        width: 100%;
+    }
+    #main-page .main-slide ul li{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color:#fff;
+        display: block;
+        width:100%;
+        position: absolute;
+        animation-duration: 15s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    #main-page .main-slide ul li:first-child{
+        animation-name:slide01;
+    }
+    #main-page .main-slide ul li:nth-child(2){
+        animation-name:slide02;
+    }
+    #main-page .main-slide ul li:nth-child(3){
+        animation-name:slide03;
+    }
+    @keyframes slide01{
+        0%, 8.3% { left: -100%; opacity: 0; }
+      8.3%,25% { left: 50%; transform: translateX(-50%); opacity: 1; }
+      33.33%, 100% { left: 50%; transform: translateX(-50%);  opacity: 0; }
+    }
+    @keyframes slide02{
+        0%, 33.33% { left: -100%; opacity: 0; }
+      41.63%, 58.29% { left: 50%;  transform: translateX(-50%);  opacity: 1; }
+      66.66%, 100% { left: 50%; transform: translateX(-50%);  opacity: 0; }
+    }
+    @keyframes slide03{
+        0%, 66.66% { left: -100%; opacity: 0; }
+      74.96%, 91.62% { left: 50%; transform: translateX(-50%);  opacity: 1; }
+      100% { left: 50%; transform: translateX(-50%);  opacity: 0; }
+    }
+    /*슬라이드 애니메이션*/
+    #main-page .main-slide ul li>h2{
+        font-weight: 600;
+        font-size: 2.6em;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+    #main-page .main-slide ul li>p{
+        font-size: 1.4em;
+    }
+    
+    /*pc 메인페이지/슬라이드*/
+    #navbar .nav-mobile-btn {
+        display: none;
+    }
+    #navbar {
+        width: 100%;
+        background-color: #1d2127;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+        display: none;
+    }
+    #navbar .container-fluid .row > a::before {
+        display: table;
+        content: "";
+    }
+    #navbar .container-fluid .row > a::after {
+        clear: both;
+    }
+    #navbar .container-fluid .row > a {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        margin: auto 0;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 2px;
+        padding: 16px 15px 18px;
+        background-color: #f24971;
+        text-decoration: none;
+    }
+    #navbar .container-fluid .row > a,
+    #navbar .navbar-collapse ul {
+        float: left;
+    }
+
+    #navbar .navbar-collapse ul {
+        margin-left: -15px;
+        margin-right: -15px;
+        padding-right: 15px;
+        float: right
+    }
+    #navbar .navbar-collapse ul > li::before {
+        display: table;
+        content: "";
+    }
+    #navbar .navbar-collapse ul > li::after {
+        clear: both;
+    }
+    #navbar .navbar-collapse ul > li {
+        display: block;
+        float: left;
+        box-sizing: border-box;
+        line-height: 20px;
+    }
+    #navbar .navbar-collapse ul li > a {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 2px;
+        padding-top: 16px;
+        padding-bottom: 13px;
+        margin: 0 15px;
+        border-bottom: 5px solid transparent;
+    }
+    #navbar .navbar-collapse ul li > a:hover {
+        border-bottom: 5px solid #f24971;
+        text-decoration: none;
+    }
+    #navbar .navbar-collapse ul .linear {
+        transition: all 200ms linear;
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
+    }
+    /*nav end*/
+    #main-page .main-button{
+        display: inline-block;
+        box-sizing: border-box;
+        color:#f24971;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        font-size: 1.2em;
+        font-family: 'Varela Round', sans-serif;
+        padding: 8px 14px;
+        border:4px solid #f24971;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 10;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        top:67vh;
+        transition: all 200ms linear;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+    }
+    #main-page .main-button:hover{
+        color:#fff;
+        background:#f24971;
+        transition: all 200ms linear;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        
+    }
+    /*main button end*/
+    #intro-page {
+        width: 100%;
+        height: 100vh;
+        background: #ff9;
+    }
+
 }
 
-/*main Intro*/
-.mainPage{
-	width:100%;
-	height: auto;
-	background:url('../img/pcbg.jpg') no-repeat center center;
-	background-attachment: fixed;
-	background-size:cover;}
+/*---------------------------pc pad end*/
 
-.mainPage .row::before{
-	content:"";
-	display: table;
-}
-.mainPage .row::after{
-	clear:both;
-}
-.mainPage .main-intro{
-	width:100%;
-	padding-top:220px;
-	text-align: center;
-	margin:0 -15px !important;
-}
-.mainPage .main-intro>h1{
-	width:320px;
-	display: inline-block;
-	font-family: 'Raleway';
-	font-size: 3.3em;
-	font-weight: bold;
-	letter-spacing: 5px;
-	word-spacing: 4px;
-	color:#333;
-	/*typing effect*/
-	margin-bottom:10px;
-
-}
-
-.mainPage .main-intro>h2{
-	font-family: 'Raleway';
-	font-size:2em;
-	color:#333;
-	word-spacing: 4px;
-}
-.mainPage .main-intro>h2::after{
-	display: block;
-	content: "";
-	width:45px;
-	height:2px;
-	background:#333;
-	margin:20px auto 50px;
-}
-.mainPage .main-about-wrap{
-	margin-right: 15px !important;
-	margin-left: 15px !important;
-}
-.mainPage .main-button{
-	padding-bottom:130px;
-}
-.mainPage .main-button>span{
-	display: block;
-	width:230px;
-	padding:10px 30px;
-	border:1px solid #ddd;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	margin:0 auto;
-	text-align: center;
-	font-size:1.2em;
-	font-family: 'Raleway';
-	color:#ddd;
-	letter-spacing: 3px;
-	cursor: pointer;
-}
-
-
-.mainPortfolio{
-	width:100%;
-	height: auto;
-	background:#dcc6af;
-	position: relative;
-}
-.mainPortfolio .portfolio-bg{
-	width:100%;
-	height: 100%;
-	position: absolute;
-	top:0;
-	left:0;
-	z-index: 1;
-}
-.mainPortfolio .portfolio-bg>li{
-	display: block;
-	height: inherit;
-	float: left;
-	z-index:1;
-}
-.mainPortfolio .portfolio-bg li:first-child{
-	width:70%;
-	height: 100%;
-	background:#dcc6af;
-	z-index:2;
-	transform: skewX(30deg);
-	position: relative;
-	left:160px;
-}
-.mainPortfolio .portfolio-bg li:last-child{
-	width:30%;
-	background:#706c69;
-}
-
-.mainPortfolio .container{
-	z-index:9999;
-}
-
-.mainPortfolio .port-wrap{
-	width:100%;
-	height: auto;
-	padding-bottom: 95px;
-}
-.mainPortfolio .port-wrap ul{
-	margin-top:-40px;
-}
-.mainPortfolio .port-wrap ul li{
-	padding:0;
-	position:relative;
-	z-index: 10;
-}
-.mainPortfolio .port-wrap .port-img{
-	z-index:10;
-}
-.mainPortfolio .port-wrap .port-img>img{
-	width:100%;
-	height:250px;
-	transition:all 0.2s linear;
-	-webkit-transition:all 0.2s linear;
-	-moz-transition:all 0.2s linear;
-	-o-transition:all 0.2s linear;
-}
-
-.mainPortfolio .port-wrap .port-overlay{
-	z-index:20px;
-	position: absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height: 250px;
-	background:rgba(0,0,0,0);
-	transition:all 0.2s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-o-transition:all 0.2s ease-in-out;
-}
-
-
-.mainPortfolio .port-wrap .port-overlay>a{
-	display: inline-block;
-	width:100%;
-	height:100%;
-	text-align: center;
-	text-decoration: none;
-	font-family: 'Raleway';
-	letter-spacing: 2px;
-	color:#fff;
-}
-.mainPortfolio .port-wrap .port-overlay a>span{
-	display:block;
-
-}
-.mainPortfolio .port-wrap .port-overlay a>span:first-child{
-	margin-top:80px;
-	font-size: 1.6em;
-	font-weight: bold;
-	transform: translateY(-110px);
-	opacity: 0;
-	transition:all 0.2s ease;
-	-webkit-transition:all 0.2s ease;
-	-moz-transition:all 0.2s ease;
-	-o-transition:all 0.2s ease;
-}
-.mainPortfolio .port-wrap .port-overlay a>span:last-child{
-	transform: translateY(120px);
-	opacity: 0;
-	transition:all 0.2s ease;
-	-webkit-transition:all 0.2s ease;
-	-moz-transition:all 0.2s ease;
-	-o-transition:all 0.2s ease;
+@media all and (max-width:767px) {
+    #main-page {
+        width: 100%;
+        height: 100vh;
+        background:url(/img/bghead.jpg) no-repeat center fixed;
+        background-size: cover;
+        z-index: 1;
+    }
+    #main-page .main-mask{
+        background: url(/img/pattern.png);
+        width:100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+    #main-page .main-slide{
+        width: 100%;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        background: transparent;
+    }
+    #main-page .main-slide h1>img{
+        max-width: 100%;
+        display: block;
+        margin:0 auto;
+    }
+    #main-page .main-slide ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:15px;
+        width: 100%;
+    }
+    #main-page .main-slide ul li{
+        text-align: center;
+        font-family: 'Varela Round', sans-serif;
+        color:#fff;
+        display: block;
+        width:100%;
+        position: absolute;
+        animation-duration: 15s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    }
+    #main-page .main-slide ul li:first-child{
+        animation-name:slide01;
+    }
+    #main-page .main-slide ul li:nth-child(2){
+        animation-name:slide02;
+    }
+    #main-page .main-slide ul li:nth-child(3){
+        animation-name:slide03;
+    }
+    @keyframes slide01{
+        0%, 8.3% { left: -100%; opacity: 0; }
+      8.3%,25% { left: 50%; transform: translateX(-50%); opacity: 1; }
+      33.33%, 100% { left: 50%; transform: translateX(-50%);  opacity: 0; }
+    }
+    @keyframes slide02{
+        0%, 33.33% { left: -100%; opacity: 0; }
+      41.63%, 58.29% { left: 50%;  transform: translateX(-50%);  opacity: 1; }
+      66.66%, 100% { left: 50%; transform: translateX(-50%);  opacity: 0; }
+    }
+    @keyframes slide03{
+        0%, 66.66% { left: -100%; opacity: 0; }
+      74.96%, 91.62% { left: 50%; transform: translateX(-50%);  opacity: 1; }
+      100% { left: 50%; transform: translateX(-50%);  opacity: 0; }
+    }
+    /*슬라이드 애니메이션*/
+    #main-page .main-slide ul li>h2{
+        font-weight: 600;
+        font-size: 1.4em;
+        letter-spacing: 1px;
+        line-height: 40px;
+    }
+    #main-page .main-slide ul li>p{
+        font-size: 1em;
+    }
+    /*메인페이지*/
+    
+    #navbar .navbar-collapse {
+        display: none;
+    }
+    #navbar {
+        width: 100%;
+        background-color: #1d2127;
+        position: fixed;
+        top: 0;
+    }
+    #navbar .container-fluid .row > a::before {
+        display: table;
+        content: "";
+    }
+    #navbar .container-fluid .row > a::after {
+        clear: both;
+    }
+    #navbar .container-fluid .row > a {
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        margin: auto 0;
+        font-family: 'Josefin Sans', sans-serif;
+        letter-spacing: 2px;
+        padding: 16px 15px 18px;
+        background-color: #f24971;
+    }
+    #navbar .container-fluid .row > a,
+    #navbar .nav-mobile-btn {
+        float: left;
+    }
+    #navbar .nav-mobile-btn {
+        display: block;
+        float: right;
+        background-color: #ddd;
+        padding: 9px 10px;
+        margin-right: 15px;
+        margin-bottom: 8px;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+    /*네비게이션 end*/
+    #main-page .main-button{
+        display: inline-block;
+        box-sizing: border-box;
+        color:#f24971;
+        text-align: center;
+        text-decoration: none;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        font-size: 1.1em;
+        font-family: 'Varela Round', sans-serif;
+        padding: 8px 14px;
+        border:4px solid #f24971;
+        border-radius: 6px;
+        cursor: pointer;
+        z-index: 10;
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        top:67vh;
+        transition: all 200ms linear;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+    }
+    #main-page .main-button:hover{
+        color:#fff;
+        background:#f24971;
+        transition: all 200ms linear;
+        -webkit-transition: all 0.2s;
+        -moz-transition: all 0.2s;
+        -o-transition: all 0.2s;
+        
+    }
+    /*main button end*/
 }
 
-.mainPortfolio .port-wrap .port-overlay a>span:first-child::after{
-	display: block;
-	content:"";
-	width:15px;
-	height:2px;
-	margin:10px auto;
-	background:#f99;
-}
-
-footer{
-	width:100%;
-	height:auto;
-	font-family: 'Raleway';
-	color:#fff;
-	position: relative;
-	background:#706c69;
-	z-index: 1;
-}
-footer .ft-bg{
-	width:100%;
-	height: 100%;
-	position: absolute;
-	top:0;
-	left:0;
-	z-index: 1;
-}
-
-
-footer>p{
-	width: 100%;
-	display:inline-block;
-	text-align: center;
-	letter-spacing: 2px;
-	z-index: 9999;
-}
-
-footer .touch{
-	display: block;
-	font-size: 2em;
-	font-weight: 600;
-	padding-top:30px;
-	z-index: 100;
-}
-footer .touch::after{
-	display: block;
-	content:"";
-	width:40px;
-	height:3px;
-	background:#fff;
-	margin:20px auto;
-	z-index: 100;
-}
-footer .copy{
-	font-size: 1em;
-	padding:20px 0;
-	z-index: 100;
-}
-footer .ft-info{
-	width:60%;
-	height: auto;
-	margin:0 auto;
-	display: flex;
-	align-content: center;
-	align-items: center;
-	justify-content: space-between;
-	z-index: 100;
-}
-footer .ft-info li{
-	text-align: center;
-	margin:3vh 0;
-	letter-spacing: 2px;
-	z-index: 100;
-}
-footer .ft-info li>img{
-	margin-bottom: 15px;
-	z-index: 100;
-}
-
-/*hover*/
-.mainPortfolio .port-wrap ul li:hover .port-overlay{
-	background:rgba(0,0,0,0.6);
-	transition:all 0.2s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-o-transition:all 0.2s ease-in-out;
-}
-
-.mainPortfolio .port-wrap .port-overlay a:hover span{
-	transform: translateY(0px);
-	opacity: 1;
-}
-.mainPortfolio .port-wrap .port-overlay a:hover span:first-child{
-	transition-delay: 0.1s;
-	-webkit-transition-delay: 0.1s;
-	-moz-transition-delay: 0.1s;
-	-o-transition-delay: 0.1s;
-}
-.mainPortfolio .port-wrap .port-overlay a:hover span:last-child{
-	transition-delay: 0.15s;
-	-webkit-transition-delay: 0.15s;
-	-moz-transition-delay: 0.15s;
-	-o-transition-delay: 0.15s;
-}
-.mainPage .main-button>span:hover{
-	color:#f99;
-	border:1px solid #f99;
-	transition:all 0.3s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-	-o-transition:all 0.2s ease-in-out;
-}
+/*mobile end*/
