@@ -22,7 +22,7 @@
     }
     #main-page .main-slide {
         width: 100%;
-        position: absolute;
+        position: relative;
         top: 50%;
         transform: translateY(-50%);
         background: transparent;
@@ -32,101 +32,31 @@
         display: block;
         margin: 0 auto;
     }
-    #main-page .main-slide ul {
+    #main-page .main-slide div {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 15px;
         width: 100%;
     }
-    #main-page .main-slide ul li {
+    #main-page .main-slide div {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
         color: #fff;
         display: block;
         width: 100%;
         position: absolute;
-        animation-duration: 15s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
     }
-    #main-page .main-slide ul li:first-child {
-        animation-name: slide01;
-    }
-    #main-page .main-slide ul li:nth-child(2) {
-        animation-name: slide02;
-    }
-    #main-page .main-slide ul li:nth-child(3) {
-        animation-name: slide03;
-    }
-    @keyframes slide01 {
-        0%,
-        8.3% {
-            left: -100%;
-            opacity: 0;
-        }
-        8.3%,
-        25% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-        }
-        33.33%,
-        100% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-    }
-    @keyframes slide02 {
-        0%,
-        33.33% {
-            left: -100%;
-            opacity: 0;
-        }
-        41.63%,
-        58.29% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-        }
-        66.66%,
-        100% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-    }
-    @keyframes slide03 {
-        0%,
-        66.66% {
-            left: -100%;
-            opacity: 0;
-        }
-        74.96%,
-        91.62% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-        }
-        100% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-    }
-    /*슬라이드 애니메이션*/
-    #main-page .main-slide ul li > h2 {
+    #main-page .main-slide div > h2 {
         font-weight: 600;
         font-size: 2.6em;
         letter-spacing: 1px;
         line-height: 40px;
     }
-    #main-page .main-slide ul li > p {
+    #main-page .main-slide div > p {
         font-size: 1.4em;
     }
-
-    /*pc 메인페이지/슬라이드*/
+    /*pc 메인페이지 end*/
     #navbar .nav-mobile-btn {
         display: none;
     }
@@ -250,6 +180,8 @@
     #intro-page .port-wrap ul {
         width: 100%;
         height: auto;
+        padding:0;
+        margin:0;
         background: #ff9;
     }
     #intro-page .port-wrap ul li {
