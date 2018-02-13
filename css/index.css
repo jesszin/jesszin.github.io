@@ -25,7 +25,7 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        background: transparent;
+        background: #ddd;
     }
     #main-page .main-slide h1 > img {
         max-width: 100%;
@@ -132,7 +132,7 @@
         -o-transition: all 200ms linear;
     }
     /*nav end*/
-    #main-page .main-button {
+    #main-page .main-slide .main-button {
         display: inline-block;
         box-sizing: border-box;
         color: #f24971;
@@ -150,13 +150,13 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 72vh;
+        top:25vh;
         transition: all 200ms linear;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         -o-transition: all 0.2s;
     }
-    #main-page .main-button:hover {
+    #main-page .main-slide .main-button:hover {
         color: #fff;
         background: #f24971;
         transition: all 200ms linear;
