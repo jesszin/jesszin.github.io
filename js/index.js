@@ -51,14 +51,16 @@ $(document).ready(function ($) {
   
 });    
 */
+$(function () {
 $(".main-slide > div:gt(0)").hide();
 
 setInterval(function () {
     $('.main-slide > div:first')
-        .fadeOut(500)
+        .fadeOut(1000)
         .next()
         .fadeIn(1000)
         .end()
         .appendTo('.main-slide');
-}, 2000);
+}, 3000);
+    });
 /*main slide js end*/
