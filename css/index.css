@@ -25,7 +25,7 @@
         position: relative;
         top: 50%;
         transform: translateY(-50%);
-        background: #ddd;
+        background:transparent;
     }
     #main-page .main-slide h1 > img {
         max-width: 100%;
@@ -51,7 +51,7 @@
     #main-page .main-slide div > p {
         font-size: 1.4em;
     }
-    /*pc 메인페이지 end*/
+    /*pc 메인페이지/slide end*/
     #navbar .nav-mobile-btn {
         display: none;
     }
@@ -60,7 +60,7 @@
         background-color: #1d2127;
         position: fixed;
         top: 0;
-        z-index: 99;
+        z-index: 999;
         display: none;
     }
     #navbar .container-fluid .row > a::before {
@@ -184,13 +184,7 @@
         padding: 0;
         z-index: 10;
     }
-    #intro-page .port-wrap ul li:nth-child(2){
-        display: flex;
-        justify-content: center;
-    }
-    #intro-page .port-wrap ul li:nth-child(3){
-        float: right;
-    }
+    
     
     #intro-page .port-wrap .port-img {
         z-index: 10;
@@ -328,100 +322,36 @@
     }
     #main-page .main-slide {
         width: 100%;
-        position: absolute;
+        position: relative;
         top: 50%;
         transform: translateY(-50%);
-        background: transparent;
+        background:transparent;
     }
     #main-page .main-slide h1 > img {
         max-width: 100%;
         display: block;
         margin: 0 auto;
     }
-    #main-page .main-slide ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    #main-page .main-slide div {
+        margin:0 auto;
         padding-top: 15px;
         width: 100%;
-    }
-    #main-page .main-slide ul li {
         text-align: center;
         font-family: 'Varela Round', sans-serif;
         color: #fff;
-        display: block;
-        width: 100%;
         position: absolute;
-        animation-duration: 15s;
-        animation-timing-function: ease;
-        animation-iteration-count: infinite;
+        background:transparent;
     }
-    #main-page .main-slide ul li:first-child {
-        animation-name: slide01;
+    #main-page .main-slide div > h2 {
+        font-weight: 600;
+        font-size: 2.4em;
+        letter-spacing: 1px;
+        line-height: 40px;
     }
-    #main-page .main-slide ul li:nth-child(2) {
-        animation-name: slide02;
+    #main-page .main-slide div > p {
+        font-size: 1.2em;
     }
-    #main-page .main-slide ul li:nth-child(3) {
-        animation-name: slide03;
-    }
-    @keyframes slide01 {
-        0%,
-        8.3% {
-            left: -100%;
-            opacity: 0;
-        }
-        8.3%,
-        25% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-        }
-        33.33%,
-        100% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-    }
-    @keyframes slide02 {
-        0%,
-        33.33% {
-            left: -100%;
-            opacity: 0;
-        }
-        41.63%,
-        58.29% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-        }
-        66.66%,
-        100% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-    }
-    @keyframes slide03 {
-        0%,
-        66.66% {
-            left: -100%;
-            opacity: 0;
-        }
-        74.96%,
-        91.62% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 1;
-        }
-        100% {
-            left: 50%;
-            transform: translateX(-50%);
-            opacity: 0;
-        }
-    }
-    /*슬라이드 애니메이션*/
+    /*pc 메인페이지/slide end*/
     #main-page .main-slide ul li > h2 {
         font-weight: 600;
         font-size: 1.4em;
@@ -475,7 +405,7 @@
         box-sizing: border-box;
     }
     /*네비게이션 end*/
-    #main-page .main-button {
+    #main-page .main-slide .main-button {
         display: inline-block;
         box-sizing: border-box;
         color: #f24971;
@@ -483,7 +413,7 @@
         text-decoration: none;
         letter-spacing: 1px;
         white-space: nowrap;
-        font-size: 1.1em;
+        font-size: 1.2em;
         font-family: 'Varela Round', sans-serif;
         padding: 8px 14px;
         border: 4px solid #f24971;
@@ -493,13 +423,13 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 72vh;
+        top:25vh;
         transition: all 200ms linear;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
         -o-transition: all 0.2s;
     }
-    #main-page .main-button:hover {
+    #main-page .main-slide .main-button:hover {
         color: #fff;
         background: #f24971;
         transition: all 200ms linear;
@@ -508,7 +438,6 @@
         -o-transition: all 0.2s;
 
     }
-    /*main button end*/
 }
 
 /*mobile end*/
