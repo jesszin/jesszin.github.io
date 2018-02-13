@@ -150,7 +150,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 67vh;
+        top: 72vh;
         transition: all 200ms linear;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
@@ -493,7 +493,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top: 67vh;
+        top: 72vh;
         transition: all 200ms linear;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
