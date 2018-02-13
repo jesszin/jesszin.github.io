@@ -9,13 +9,21 @@ $(window).scroll(function () {
 
 
 $(function () {
-    $('a').on('click', function (e) {
+    $('.main-button').on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top
+        }, 800, 'linear');
+    });
+});
+/*-----main-button js end*/
+
+$(function () {
+    $('.navbar-collapse ul li>a').on('click', function (e) {
         e.preventDefault();
         $('html, body').animate({
             scrollTop: $($(this).attr('href')).offset().top
         }, 600, 'linear');
     });
 });
-
-/*-----main-button js end*/
-
+/*----nav js end*/
