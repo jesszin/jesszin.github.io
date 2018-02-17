@@ -17,7 +17,7 @@ $(function () {
     });
 });
 /*-----main-button js end*/
-
+/*
 $(function () {
     $('.navbar-collapse ul li>a').on('click', function (e) {
         e.preventDefault();
@@ -26,6 +26,7 @@ $(function () {
         }, 600, 'linear');
     });
 });
+*/
 /*----nav js end*/
 
 /*
