@@ -431,7 +431,7 @@
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top:25vh;
+        top:32vh;
         transition: all 200ms linear;
         -webkit-transition: all 0.2s;
         -moz-transition: all 0.2s;
