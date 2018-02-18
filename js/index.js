@@ -62,6 +62,6 @@ setInterval(function () {
         .fadeIn(1000)
         .end()
         .appendTo('.main-slide');
-}, 3000);
+}, 4000);
     });
 /*main slide js end*/
