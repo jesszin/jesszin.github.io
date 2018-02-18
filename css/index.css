@@ -171,7 +171,6 @@
         height: auto;
         padding: 55px 0;
         background: #ff9;
-        text-transform: uppercase;
     }
     #intro-page .port-page>h3{
         text-align: center;
@@ -180,18 +179,21 @@
         font-family: 'Josefin Sans', sans-serif;
         letter-spacing: 5px;
         padding:30px 0;
+        text-transform: uppercase;
     }
     #intro-page .port-page .port-wrap ul {
         width: 100%;
         height: auto;
-        padding:0;
         margin:0;
-        background: #ff9;
+        padding:0;        
     }
     #intro-page .port-page .port-wrap ul li {
         position: relative;
         padding: 0;
         z-index: 10;
+    }
+    #intro-page .port-page .port-wrap ul li:nth-child(2){
+        margin:0 15px;
     }
     #intro-page .port-page .port-wrap .port-img {
         z-index: 10;
@@ -270,7 +272,7 @@
 
     /*intro page hover*/
     #intro-page .port-page .port-wrap ul li:hover .port-overlay {
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.8);
         transition: all 0.2s ease-in-out;
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
