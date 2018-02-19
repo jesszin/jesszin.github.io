@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
 
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
 </head>
 
@@ -84,17 +86,17 @@
     <div id="intro-page">
         <div class="port-page">
             <h3>portfolio</h3>
-            <div class="container" style="background:#f99">
+            <div class="container" style="background:#fff">
                 <div class="row">
                     <div class="col-md-12 port-wrap">
 
                         <ul>
-                            <li class="col-md-4 slide-up-fade-in slide-delay">
+                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
                                 <div class="port-img">
                                     <img src="img/moderntimes-thumbnail.png" alt="moderntimes-thumbnail">
                                 </div>
                                 <div class="port-overlay">
-                                    <a href="http://moderntimes.dothome.co.kr/index" target="_blank">
+                                    <a href="#" id="myBtn" data-toggle="modal" data-target="#myModal">
                                             <span>
                                                 MODERN TIMES<br>
                                             </span>
@@ -105,7 +107,7 @@
                             </a>
                                 </div>
                             </li>
-                            <li class="col-md-4 slide-up-fade-in slide-delay">
+                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
                                 <div class="port-img">
                                     <img src="img/testimg.jpg">
                                 </div>
@@ -121,7 +123,7 @@
                             </a>
                                 </div>
                             </li>
-                            <li class="col-md-4 slide-up-fade-in slide-delay">
+                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
                                 <div class="port-img">
                                     <img src="img/portfolio-thumbnail.png">
                                 </div>
@@ -145,12 +147,12 @@
         <!--portfolio end-->
         <div class="port-page project-page">
             <h3>project</h3>
-            <div class="container" style="background:#f99">
+            <div class="container" style="background:#fff">
                 <div class="row">
                     <div class="col-md-12 port-wrap">
 
                         <ul>
-                            <li class="col-md-4 slide-up-fade-in slide-delay">
+                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
                                 <div class="port-img">
                                     <img src="img/peter-thumbnail.png">
                                 </div>
@@ -167,7 +169,7 @@
                             </a>
                                 </div>
                             </li>
-                            <li class="col-md-4 slide-up-fade-in slide-delay">
+                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
                                 <div class="port-img">
                                     <img src="img/ngo-thumbnail.png">
                                 </div>
@@ -178,12 +180,12 @@
                                             </span>
                                 <span>
                                                 Responsive web<br>
-                                                Bootstrap module 
+                                                Bootstrap modal 
                                             </span>
                             </a>
                                 </div>
                             </li>
-                            <li class="col-md-4 slide-up-fade-in slide-delay">
+                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
                                 <div class="port-img">
                                     <img src="img/testimg.jpg">
                                 </div>
@@ -221,12 +223,45 @@
             </div>
         </div>
         <!--project end-->
-    </div>                            
+    </div>
     <!--intro-page end-->
     <div id="about-page">
 
     </div>
-    <div id="contact-page"></div>
+    <div id="contact-page">
+
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog"  style="max-width:1200px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modern Times</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/p01-large.jpg" width="auto">
+                    <p>This is my portfolio</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--modern times Modal-->
+
+    <script>
+        $(document).ready(function(){
+            $("#myBtn").click(function(){
+                $("#myModal").modal({backdrop: true});
+            });
+        });
+    </script>
 
 </body>
 </html>
