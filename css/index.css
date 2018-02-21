@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-/*font-family: 'Josefin Sans', sans-serif; 영어폰트*/
+/*
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+font-family: 'Josefin Sans', sans-serif; 영어폰트*/
 
-@import url('https://fonts.googleapis.com/css?family=Varela+Round');
-/*font-family: 'Varela Round', sans-serif; 슬라이드 폰트*/
+/*
+<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+font-family: 'Varela Round', sans-serif; 슬라이드 폰트*/
 
 
     #main-page {
@@ -330,14 +332,3 @@
         background: #f9f;
     }
 
-/*modal edit css*/
-.modal{
-    top:20px;
-}
-.modal-dialog{
-    width:100%;
-}
-.modal-title{
-    text-align: center;
-    font-size:2em;
-}

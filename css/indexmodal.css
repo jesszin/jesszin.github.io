@@ -1,0 +1,25 @@
+/*modal edit css*/
+.modal{
+    top:20px;
+}
+.modal .modal-dialog{
+    width:100%;
+}
+.modal-content .modal-title{
+    text-align: center;
+    font-size:2em;
+}
+.modal-title .modal-body{
+    font-family: 'Varela Round', sans-serif;
+}
+.modal-title .modal-body img{
+    display: block;
+    margin:0 auto;
+}
+.modal-body .modal-subject{
+    text-align: center;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    margin:20px 0 40px 0;
+}
+/*modern times modal*/

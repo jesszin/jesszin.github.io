@@ -15,7 +15,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-
+    <link rel="stylesheet" href="css/indexmodal.css">
+    
+    <!--fonts--->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -112,7 +116,7 @@
                                     <img src="img/testimg.jpg">
                                 </div>
                                 <div class="port-overlay">
-                                    <a href="ptfl-moderntimes.html">
+                                    <a href="#"  id="myBtn02" data-toggle="modal" data-target="#myModal02">
                                             <span>
                                                 NEXT-IN<br>
                                             </span>
@@ -128,7 +132,7 @@
                                     <img src="img/portfolio-thumbnail.png">
                                 </div>
                                 <div class="port-overlay">
-                                    <a href="ptfl-moderntimes.html">
+                                    <a href="#"  id="myBtn03" data-toggle="modal" data-target="#myModal03">
                                             <span>
                                                 PORTFOLIO<br>
                                             </span>
@@ -157,7 +161,7 @@
                                     <img src="img/peter-thumbnail.png">
                                 </div>
                                 <div class="port-overlay">
-                                    <a href="http://peter.spaceoddity.me/#/app/main" target="_blank">
+                                    <a href="#"  id="myBtn04" data-toggle="modal" data-target="#myModal04">
                                             <span>
                                                 PETER<br>
                                             </span>
@@ -174,13 +178,14 @@
                                     <img src="img/ngo-thumbnail.png">
                                 </div>
                                 <div class="port-overlay">
-                                    <a href="http://jinar76.dothome.co.kr/ngo/" target="_blank">
+                                    <a href="#"  id="myBtn05" data-toggle="modal" data-target="#myModal05">
                                             <span>
                                                 NGO Homepage<br>
                                             </span>
                                 <span>
                                                 Responsive web<br>
-                                                Bootstrap modal 
+                                                General modification of the homepage<br>
+                                                with bootstrap module
                                             </span>
                             </a>
                                 </div>
@@ -190,7 +195,7 @@
                                     <img src="img/testimg.jpg">
                                 </div>
                                 <div class="port-overlay">
-                                    <a href="ptfl-moderntimes.html">
+                                    <a href="#"  id="myBtn06" data-toggle="modal" data-target="#myModal06">
                                             <span>
                                                 Wise data<br>
                                             </span>
@@ -232,7 +237,7 @@
 
     </div>
 
-    <!-- Modal -->
+    <!---------------------------------------- Modal -->
     <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog"  style="max-width:1200px;">
 
@@ -241,6 +246,64 @@
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Modern Times</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/modal-mt.png">
+                    <p class="modal-subject">Modern Times (Responsive Web)</p>
+                     <div class="container">
+                        <div class="row">
+                            <div class="col-md-offset-2 col-md-5">
+                                <p class="modal-explain">
+                                    웹 사이트의 로고를 포함한 전체적인 디자인 및 코딩 작업을 하였습니다.<br>
+                                    <br>
+                                    <strong>기획의도</strong> :
+                                     현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 공간을 제작하는 회사로 다양한 가구와 디자인을 볼 수 있습니다.
+                                </p>
+                            </div>
+                            <div class="col-md-5 ">2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--modern times Modal end-->
+    
+    <div class="modal fade" id="myModal02" role="dialog">
+        <div class="modal-dialog"  style="max-width:1200px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">NEXT-IN Company</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/p01-large.jpg" width="auto">
+                    <p class="modal-subject">This is my portfolio</p>
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--next-in Modal end-->
+    
+    <div class="modal fade" id="myModal03" role="dialog">
+        <div class="modal-dialog"  style="max-width:1200px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Portfolio</h4>
                 </div>
                 <div class="modal-body">
                     <img src="img/p01-large.jpg" width="auto">
@@ -253,12 +316,109 @@
 
         </div>
     </div>
-    <!--modern times Modal-->
+    <!--next-in Modal end-->
+    
+    <div class="modal fade" id="myModal04" role="dialog">
+        <div class="modal-dialog"  style="max-width:1200px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">PETER</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/p01-large.jpg" width="auto">
+                    <p>This is my portfolio</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--PETER Modal end-->
+    
+    <div class="modal fade" id="myModal05" role="dialog">
+        <div class="modal-dialog"  style="max-width:1200px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">NGO Hompage</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/p01-large.jpg" width="auto">
+                    <p>This is my portfolio</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--next-in Modal end-->
+    
+    <div class="modal fade" id="myModal06" role="dialog">
+        <div class="modal-dialog"  style="max-width:1200px;">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">WISE DATA</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/p01-large.jpg" width="auto">
+                    <p>This is my portfolio</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--next-in Modal end-->
+    
 
     <script>
         $(document).ready(function(){
             $("#myBtn").click(function(){
                 $("#myModal").modal({backdrop: true});
+            });
+        });
+        $(document).ready(function(){
+            $("#myBtn02").click(function(){
+                $("#myModal02").modal({backdrop: true});
+            });
+        });
+        $(document).ready(function(){
+            $("#myBtn02").click(function(){
+                $("#myModal02").modal({backdrop: true});
+            });
+        });
+        $(document).ready(function(){
+            $("#myBtn03").click(function(){
+                $("#myModal03").modal({backdrop: true});
+            });
+        });
+        $(document).ready(function(){
+            $("#myBtn04").click(function(){
+                $("#myModal04").modal({backdrop: true});
+            });
+        });
+        $(document).ready(function(){
+            $("#myBtn05").click(function(){
+                $("#myModal05").modal({backdrop: true});
+            });
+        });
+        $(document).ready(function(){
+            $("#myBtn06").click(function(){
+                $("#myModal06").modal({backdrop: true});
             });
         });
     </script>
