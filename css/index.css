@@ -202,7 +202,7 @@ font-family: 'Varela Round', sans-serif; 슬라이드 폰트*/
     }
     #intro-page .port-page .port-wrap ul li {
         position: relative;
-        padding: 0 10px;
+        padding: 10px 10px 0 10px;
         z-index: 10;
     }
 
@@ -294,6 +294,7 @@ font-family: 'Varela Round', sans-serif; 슬라이드 폰트*/
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
+        margin-top:11px;
     }
 
     #intro-page .port-page .port-wrap .port-overlay a:hover span {
