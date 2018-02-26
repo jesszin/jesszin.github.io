@@ -54,11 +54,6 @@ $(document).ready(function () {
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
         $(document).off("scroll");
-        
-        $('a').each(function () {
-            $(this).removeClass('active');
-        })
-        $(this).addClass('active');
       
         var target = this.hash,
             menu = target;
