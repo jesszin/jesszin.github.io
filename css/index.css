@@ -154,11 +154,11 @@ font-family: 'Varela Round', sans-serif; 슬라이드 폰트*/
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        top:25vh;
+        top:190%;
         transition: all 200ms linear;
-        -webkit-transition: all 0.2s;
-        -moz-transition: all 0.2s;
-        -o-transition: all 0.2s;
+        -webkit-transition: all 200ms linear;
+        -moz-transition: all 200ms linear;
+        -o-transition: all 200ms linear;
     }
     #main-page .main-slide .main-button:hover {
         color: #fff;
