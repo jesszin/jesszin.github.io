@@ -1,817 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="JINAREUM(jessica)">
     <meta name="title" content="Jinareum's Portfolio">
     <meta name="description" content="Jinareum's Portfolio">
-
-    <title>Jin A Reum's Portfolio</title>
+    <meta name="keywords" content="publisher,HTML,CSS,Javascript,웹표준,웹접근성,웹퍼블리셔">
     <!--[if lt IE 9]>
-	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
-<![endif]-->
-   <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="../img/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="../img/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="../img/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="../img/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="../img/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="../img/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="../img/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="../img/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="../img/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
-<link rel="manifest" href="../img/favicon/manifest.json">
-<meta name="jinarem's favicon" content="#ffffff">
-<meta name="jinarem's favicon" content="../img/favicon/ms-icon-144x144.png">
-<meta name="jinareum's favicon" content="#ffffff">
-   <!--favicon-->
+    <script src="js/html5shiv.js" type="text/javascript"></script>
+    <![endif]-->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Jin Areum's Portfolio</title>
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Nanum+Gothic|Open+Sans|Varela+Round" rel="stylesheet">
+
+
+    <link rel="shortcut icon" href="img/favicon-32x32.png">
+    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/indexmodal.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
 
-    <!--fonts--->
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
     <script src="js/index.js"></script>
-</head>
-
-<body>
-    <div id="main-page">
-        <div class="main-mask"></div>
-        <nav id="navbar">
-            <div class="container-fluid">
-                <div class="row">
-                    <a href="index.html">JAR</a>
-                    <button type="button" class="nav-mobile-btn">
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                          <span class="icon-bar"></span>
-                      </button>
-                    <div class="navbar-collapse">
-                        <ul>
-                            <li><a href="#main-page" class="linear">HOME</a></li>
-                            <li><a href="#intro-page" class="linear">WORK</a></li>
-                            <li><a href="#about-page" class="linear">ABOUT</a></li>
-                            <li><a href="#contact-page" class="linear">CONTACT</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <!--navigation end-->
-        <div class="main-slide">
-            <h1><img src="img/jar.png" alt="my logo"></h1>
-            <!--<ul>
-                <li>
-                    <h2>I'm Jin A-Reum</h2>
-                    <p>It's my portfolio :D</p>
-                </li>
-                <li>
-                    <h2>I'm Web Publisher</h2>
-                    <p>I'll show you my work</p>
-                </li>
-                <li>
-                    <h2>It's my work jar :D</h2>
-                    <p>This is filled with my work like jam jar!</p>
-                </li>
-            </ul>-->
-            <div>
-                <h2>I'm Jin A-Reum</h2>
-                <p>It's my portfolio :D</p>
-            </div>
-            <div>
-                <h2>I'm a <strong>Web Publisher</strong></h2>
-                <p>Thanks for checking out my portfolio </p>
-            </div>
-            <div>
-                <h2>It's my work jar :D</h2>
-                <p>This is filled with my work like jam jar!</p>
-            </div>
-
-            <a href="#intro-page" class="main-button">
-               Portfolio
-           </a>
-
-        </div>
-
-    </div>
-    <!--main page end-->
-    <div id="intro-page">
-        <div class="port-page">
-            <h3>portfolio</h3>
-            <div class="container" style="background:#fff">
-                <div class="row">
-                    <div class="col-md-12 port-wrap">
-
-                        <ul>
-                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/moderntimes-thumbnail.png" alt="moderntimes-thumbnail">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn" data-toggle="modal" data-target="#myModal">
-                                            <span>
-                                                MODERN TIMES<br>
-                                            </span>
-                                <span>
-                                                Responsive web<br>
-                                                Design &amp; Coding
-                                            </span>
-                            </a>
-                                </div>
-                            </li>
-                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/testimg.jpg">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn02" data-toggle="modal" data-target="#myModal02">
-                                            <span>
-                                                NEXT-IN<br>
-                                            </span>
-                                <span>
-                                                Responsive web<br>
-                                                Design &amp; Coding
-                                            </span>
-                            </a>
-                                </div>
-                            </li>
-                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/portfolio-thumbnail.png">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn03" data-toggle="modal" data-target="#myModal03">
-                                            <span>
-                                                PORTFOLIO<br>
-                                            </span>
-                                <span>
-                                                Responsive web<br>
-                                                Design &amp; Coding &amp; Bootstrap
-                                            </span>
-                            </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--portfolio end-->
-        <div class="port-page project-page">
-            <h3>project</h3>
-            <div class="container" style="background:#fff">
-                <div class="row">
-                    <div class="col-md-12 port-wrap">
-
-                        <ul>
-                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/peter-thumbnail.png">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn04" data-toggle="modal" data-target="#myModal04">
-                                            <span>
-                                                PETER<br>
-                                            </span>
-                                <span>
-                                                Mobile web<br>
-                                                Node.js . Angular.js . Ionic . Sass<br>
-                                                접속 시 모바일 버전으로(F12)<br> 보는 것을 권장합니다.
-                                            </span>
-                            </a>
-                                </div>
-                            </li>
-                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/ngo-thumbnail.png">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn05" data-toggle="modal" data-target="#myModal05">
-                                            <span>
-                                                NGO Homepage<br>
-                                            </span>
-                                <span>
-                                                Responsive web<br>
-                                                General modification of the homepage<br>
-                                                with bootstrap module
-                                            </span>
-                            </a>
-                                </div>
-                            </li>
-                            <!--<li class="col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/testimg.jpg">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn06" data-toggle="modal" data-target="#myModal06">
-                                            <span>
-                                                travel app<br>
-                                            </span>
-                                <span>
-                                                Mobile app<br>
-                                                Node.js . Ionic2 . Sass
-                                            </span>
-                            </a>
-                                </div>
-                            </li>-->
-                            <li class="col-xs-12 col-sm-4 col-md-4 slide-up-fade-in slide-delay">
-                                <div class="port-img">
-                                    <img src="img/wise-thumbnail.png">
-                                </div>
-                                <div class="port-overlay">
-                                    <a href="#" id="myBtn07" data-toggle="modal" data-target="#myModal07">
-                                            <span>
-                                                Wise data<br>
-                                            </span>
-                                <span>
-                                                Data visuallization<br>
-                                                Python . Gephi . Illustrator
-                                            </span>
-                            </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--project end-->
-    </div>
-    <!--intro-page end-->
-    <div id="about-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="about-title">
-                        <h2>
-                            About Jar
-                        </h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="about-profile">
-                        <img src="img/avatar.jpg" alt="profile it's me">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="build about-info">
-                        <p>
-                            Jin A Reum<br> Birth : 92.07.06<br> Major in : Business management<br>
-                            <br>
-
-                            <span class="education">Education</span><br>
-                            더조은컴퓨터 <br> - 디지털앱&amp;웹디자인콘텐츠제작 (UI/UX) 수료 (17.04~17.09)<br> 엔코아 아카데미 <br>- 웹퍼블리셔를 위한 Javascript 기초 &amp; D3.js 수료 (18.01~18.02)<br>
-                            <br>
-                            <span class="education">W</span>ebstandard . <span class="education">R</span>esponsive . <span class="education">C</span>orporate.
-                            <br>
-                            웹 표준, 웹 접근성 , 크로스 브라우징을 준수한 웹사이트를 제작합니다. <br>
-
-                        </p>
-                    </div>
-
-                </div>
-                <div class="col-md-6">
-                    <div class="build about-skill">
-                        <ul>
-                            <li class="wrap-progress">
-                                <p class="pull-left">
-                                    HTML&amp;CSS
-                                </p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width:88%;">88%</div>
-                                </div>
-                            </li>
-
-                            <li class="wrap-progress">
-                                <p class="pull-left">
-                                    Javascript&amp;Jquery
-                                </p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">70%</div>
-                                </div>
-                            </li>
-                            <li class="wrap-progress">
-                                <p class="pull-left">
-                                    Photoshop&amp;Illustrator
-                                </p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width:85%;">85%</div>
-                                </div>
-                            </li>
-                            <li class="wrap-progress">
-                                <p class="pull-left">
-                                    OA
-                                </p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="87" aria-valuemin="0" aria-valuemax="100" style="width:87%;">87%</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="about-tool">
-                       <h5>Tools used for publisher</h5>
-                        <ul>
-                            <li>
-                                <img src="img/brackets.png" alt="brackets">
-                            </li>
-                            <li>
-                                <img src="img/intellij.png" alt="intellij">
-                            </li>
-                            <li>
-                                <img src="img/git.png" alt="git">
-                            </li>
-                            <li>
-                                <img src="img/github.png" alt="github">
-                            </li>
-                            <li>
-                                <img src="img/bitbucket.png" alt="bitbucket">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--container end-->
-    </div>
-    <div id="contact-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="contact-subject">
-                        <h5>Contact</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <img src="img/place.png" alt="placeholder">
-                        <p>Incheon<br>
-                    Line 1 Jempulpo Station (Express)</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <img src="img/phone.png" alt="phone call">
-                        <p>82+ 9475 9790</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <img src="img/mail.png" alt="email">
-                        <p>jinareum.76@gamil.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--contact-page-end-->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="copy-right">
-                        <p>&copy; <span>JAR</span> All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!---------------------------------------- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modern Times</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-mt.png" width="100%">
-                    <p class="modal-subject">Modern Times (Responsive Web)</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>기획의도</strong><br> 현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 공간을 제작하는 회사로 다양한 가구와 디자인을 볼 수 있습니다.
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    웹 사이트의 로고를 포함한 전체적인 디자인 및 코딩 작업을 하였습니다.<br>
-                                    <strong>Type :</strong> Responsive<br>
-                                    <strong>Tool :</strong> Brackets<br>
-                                    <strong>Skills :</strong> HTML5 , CSS3 , Jquery
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container modal-button-wrap">
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-2 col-xs-6 col-sm-6 ">
-                                <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-button">기획서 보기</a>
-                            </div>
-                            <div class="col-md-2 col-xs-6 col-sm-6">
-                                <a href="http://moderntimes.dothome.co.kr/index/" target="_blank" class="modal-button">홈페이지</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--modern times Modal end-->
-
-    <div class="modal fade" id="myModal02" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Modern Times</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-mt.png" width="100%">
-                    <p class="modal-subject">Modern Times (Responsive Web)</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>기획의도</strong><br> 현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 공간을 제작하는 회사로 다양한 가구와 디자인을 볼 수 있습니다.
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    웹 사이트의 로고를 포함한 전체적인 디자인 및 코딩 작업을 하였습니다.<br>
-                                    <strong>Type :</strong> Responsive<br>
-                                    <strong>Tool :</strong> Brackets<br>
-                                    <strong>Skills :</strong> HTML5 , CSS3 , Jquery
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container modal-button-wrap">
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-2 col-xs-6 col-sm-6 ">
-                                <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-button">기획서 보기</a>
-                            </div>
-                            <div class="col-md-2 col-xs-6 col-sm-6">
-                                <a href="http://moderntimes.dothome.co.kr/index/" target="_blank" class="modal-button">홈페이지</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--NEXT-IN Modal end-->
-
-    <div class="modal fade" id="myModal03" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Portfolio</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-portfolio.png" width="100%">
-                    <p class="modal-subject">Portfolio (Responsive Web)</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>기획의도</strong><br> 저의 작업물과 참여 프로젝트를 한눈에 볼 수 있게 하였으며, 그 후 저에 대한 정보를 볼 수 있게 디자인 하였습니다.
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    웹 사이트의 로고를 포함한 전체적인 디자인 및 코딩 작업을 하였습니다.<br>
-                                    <strong>Type :</strong> Responsive<br>
-                                    <strong>Tool :</strong> Brackets<br>
-                                    <strong>Skills :</strong> HTML5 , CSS3 , Jquery , Bootstrap
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container modal-button-wrap">
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-2 col-xs-6 col-sm-6 ">
-
-                            </div>
-                            <div class="col-md-2 col-xs-6 col-sm-6">
-                                <a href="#" target="_blank" class="modal-button">홈페이지</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--PORTFOLIO Modal end-->
-
-    <div class="modal fade" id="myModal04" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">PETER</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-peter.png" width="100%">
-                    <p class="modal-subject">PETER (Mobile Web)</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>참여 과정</strong><br> node.js의 stream system gulp.js를 기반으로, 디자인은 Zepplin으로 공유받으면서, Ionic 으로 프로젝트의 첫 코딩작업을 하였습니다. <br> 프로젝트 후반 시니어 퍼블리셔를 보조하며 다시 한번 최종 수정작업에 참여 하였습니다.<br> 모든 프로젝트의 과정은 git(bitbucket)으로 공유과정이 이루어졌습니다.<br>
-                                    <br>
-                                    <mark>홈페이지 접속시 모바일버전(f12)으로 보는것을 권장합니다.</mark>
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    그래프를 제외한 하드코딩을 하였습니다.<br>
-                                    <strong>Type :</strong> Moblie Web<br>
-                                    <strong>Tool :</strong> IntelliJ<br>
-                                    <strong>Skills :</strong> HTML5 , SASS , Angular.js Edit , Ionic Components
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container modal-button-wrap">
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-2 col-xs-6 col-sm-6 ">
-
-                            </div>
-                            <div class="col-md-2 col-xs-6 col-sm-6">
-                                <a href="http://peter.spaceoddity.me" target="_blank" class="modal-button">홈페이지</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--PETER Modal end-->
-
-    <div class="modal fade" id="myModal05" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">NGO Homepage</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-ngo.png" width="100%">
-                    <p class="modal-subject">NGO Homepage</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>참여 과정</strong><br> 1차 modal로 이뤄진 홈페이지를 받아, 정보 없이 이뤄진 modal에서 NGO 홈페이지로 수정 웹 수정작업(로고 및 소개) 및 코딩을 하였습니다.<br> 이 홈페이지와 홈페이지의 admin 페이지까지 modal의 html5,css,api를 수정하였습니다.<br> 모든 프로젝트의 과정은 git(bitbucket)으로 공유과정이 이루어졌습니다.
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    웹 사이트의 로고를 포함한 전체적인 수정과 코딩을 참여하였습니다..<br>
-                                    <strong>Type :</strong> Bootstrap modal<br>
-                                    <strong>Tool :</strong> Brackets &amp; Intellij<br>
-                                    <strong>Skills :</strong> HTML5 , CSS3 , Javascript edit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container modal-button-wrap">
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-2 col-xs-6 col-sm-6 ">
-                                <!--                                 <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc"  target="_blank" class="modal-button">기획서 보기</a>-->
-                            </div>
-                            <div class="col-md-2 col-xs-6 col-sm-6">
-                                <a href="http://jinar76.dothome.co.kr/s4i-front/" target="_blank" class="modal-button">홈페이지</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--ngo homepage Modal end-->
-
-    <div class="modal fade" id="myModal06" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">NGO Homepage</h4>
-                </div>
-                <div class="modal-body">
-                    <img src="img/modal-ngo.png" width="100%">
-                    <p class="modal-subject">NGO Homepage</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>참여 과정</strong><br> 1차 modal로 이뤄진 홈페이지를 받아, 정보 없이 이뤄진 modal에서 NGO 홈페이지로 수정 웹 수정작업(로고 및 소개) 및 코딩을 하였습니다.<br> 이 홈페이지와 홈페이지의 admin 페이지까지 modal의 html5,css,api를 수정하였습니다.<br> 모든 프로젝트의 과정은 git(bitbucket)으로 공유과정이 이루어졌습니다.
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    웹 사이트의 로고를 포함한 전체적인 수정과 코딩을 참여하였습니다..<br>
-                                    <strong>Type :</strong> Bootstrap modal<br>
-                                    <strong>Tool :</strong> Brackets &amp; Intellij<br>
-                                    <strong>Skills :</strong> HTML5 , CSS3 , Javascript edit
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container modal-button-wrap">
-                        <div class="row">
-                            <div class="col-md-offset-4 col-md-2 col-xs-6 col-sm-6 ">
-                                <!--                                 <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc"  target="_blank" class="modal-button">기획서 보기</a>-->
-                            </div>
-                            <div class="col-md-2 col-xs-6 col-sm-6">
-                                <a href="http://jinar76.dothome.co.kr/s4i-front/" target="_blank" class="modal-button">홈페이지</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--travelover app Modal end-->
-
-    <div class="modal fade" id="myModal07" role="dialog">
-        <div class="modal-dialog" style="max-width:1200px;">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Wise Data</h4>
-                </div>
-                <div class="modal-body">
-                    <!--<img src="img/modal-mt.png">-->
-                    <p class="modal-subject">Wise Data(data visualization)</p>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-offset-1 col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain modal-right">
-                                    <strong>참여 과정</strong>
-                                    <br> Python기반 tool Pycharm으로 데이터 시각화에 필요한 그래프를 그리기 위한 node(꼭지점) , edge(연결선)를 생성한 뒤, <br> gephi로 연결 관계를 정의 할 수 있도록 그래프를 생성하여 관련성을 돋보일 수 있게 배치한 뒤, svg로 저장합니다.<br> 저장한 svg 파일을 illustrator로 학과끼리 묶어주는 시각화 작업을 합니다.<br> 스무개 이상의 대학교 학과의 데이터 시각화 작업을 마쳤습니다.
-                                </p>
-                                <br>
-
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-5">
-                                <p class="modal-explain">
-                                    각 대학교의 학과 간의 관련성을 보여주는 학과 지도입니다.<br> 학과의 데이터 시각화에 필요한 node,edge 생성 및 시각화 작업 전부 참여하였습니다.<br>
-                                    <strong>Type :</strong> Data visualization<br>
-                                    <strong>Tool :</strong> PyCharm , Gephi , Illustrator<br>
-
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-4 col-md-12">
-                                <img src="img/modal-wise.png" width="100%">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--modal-body-->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    <!--wise data Modal end-->
-
     <script>
-        $(document).ready(function() {
-            $("#myBtn").click(function() {
-                $("#myModal").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn02").click(function() {
-                $("#myModal02").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn02").click(function() {
-                $("#myModal02").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn03").click(function() {
-                $("#myModal03").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn04").click(function() {
-                $("#myModal04").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn05").click(function() {
-                $("#myModal05").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn06").click(function() {
-                $("#myModal06").modal({
-                    backdrop: true
-                });
-            });
-        });
-        $(document).ready(function() {
-            $("#myBtn07").click(function() {
-                $("#myModal07").modal({
-                    backdrop: true
-                });
-            });
+        WebFont.load({
+            google: {
+                families: ['Alegreya Sans SC', 'Open Sans', 'Nanum Gothic']
+            }
         });
     </script>
+
+
+</head>
+<body>
+<section id="main">
+    <div class="main-page">
+        <a href="#" class="nav-btn"><img src="img/jar.png" alt="jar logo"></a>
+        <p class="click">Click Me!</p>
+        <h1 class="author">JIN A REUM :D</h1>
+        <p class="tag">Web Publisher</p>
+        <a href="#" class="close"><img src="img/close.svg"></a>
+        <nav class="home-nav">
+            <ul>
+                <li>
+                    <a href="#portfolio" class="scroll">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#about" class="scroll">ABOUT ME</a>
+                </li>
+                <li>
+                    <a href="#contact" class="scroll">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <p class="comment">© JAR All Rights Reserved.</p>
+    </div><!--main-page end-->
+    <div class="main-page-right">
+        <div class="slideWrap">
+            <div class="slider">
+                <div style="min-width: 100%;">
+                    <h2>I'm Jin A-Reum</h2>
+                    <p>방문해주셔서 감사합니다 :D</p>
+                </div>
+                <div style="min-width: 100%;">
+                    <h2>I'm a <strong>Web Publisher</strong></h2>
+                    <p>저의 포트폴리오를 확인 하실 수 있습니다.</p>
+                </div>
+                <div style="min-width: 100%;">
+                    <h2>It's my work jar :D</h2>
+                    <p>This is filled with my work like jam jar!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="container">
+    <div class="intro-page">
+        <div class="intro-wrap">
+            <div id="portfolio">
+                <h3>PORTFOLIO</h3>
+                <p>제가 디자인하고, 코딩까지 마쳐 제작한 <b>웹 사이트들</b>과 참여한 <b>프로젝트</b>들입니다.<br>
+                    Ionic 기반으로 node.js . angular.js 사용한 모바일웹 제작 및 부트스트랩 modal을 이용한 홈페이지 제작과<br>
+                    데이터 시각화(data visualization) 프로젝트 외
+                    <b>신규 구축</b> 및 <b>리뉴얼 업무</b>에 참여하였습니다.</p>
+                <h5>Web homepage</h5>
+                <ul class="port-list">
+                    <li class="p1">
+                        <a href="#" class="page">
+                            <div class="port-overlay">
+                                <p class="p1-mt">MODERNTIMES</p>
+                            </div>
+                        </a>
+                    </li>
+                <li class="p2">
+                    <a href="#">
+                        <div class="port-overlay">
+                            <p class="p2-nextin">NextIn</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="p3">
+                    <a href="#">
+                        <div class="port-overlay">
+                            <p class="p3-portfolio">PORTFOLIO</p>
+                        </div>
+                    </a>
+                </li>
+                </ul>
+                <h5>Project</h5>
+                <ul class="port-list">
+                    <li class="p4">
+                        <a href="#">
+                            <div class="port-overlay">
+                                <p class="p4-peter">PETER</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="p5">
+                        <a href="#">
+                            <div class="port-overlay">
+                                <p class="p5-ngo">NGO</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="p6">
+                        <a href="#">
+                            <div class="port-overlay">
+                                <p class="p6-wise">DataVisualization</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--portfolio end-->
+            <div id="about">
+                2
+            </div>
+            <!--about end-->
+            <div id="contact">
+
+            </div>
+            <!--contact end-->
+            <div id="contact">
+
+            </div>
+        </div>
+    </div>
+    <div class="side-bar">
+        <a href="http://github.com/jesszin" target="_blank" class="side-logo"><img src="img/sidebar.png"
+                                                                                   alt="signature"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#main" class="home scroll">HOME</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="portfolio scroll">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a href="#about" class="about scroll">ABOUT ME</a>
+                </li>
+                <li>
+                    <a href="#contact" class="contact scroll">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="port-content modal">
+        <div class="p1-cotent">
+            <p>MODERNTIMES(Responisve web)</p>
+            <div class="p1-text">
+                <ul>
+                    <li>
+                        <b>기획의도</b>
+                        <p>인테리어에 관심이 생긴 뒤 가구 및 디자인을 보면서 구상한 홈페이지입니다.<br>
+                            현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 공간을 제작하는 회사를 디자인하였습니다.</p>
+                    </li>
+                    <li>
+                        <b>홈페이지의 로고 및 전체 디자인과 하드코딩을 하였습니다.</b>
+                        <p>
+                            <b>Tool</b> : Brackets . Photoshop . Illustrator
+                        </p>
+                    </li>
+                </ul>
+                <img src="img/jar.png" alt="moderntimes">
+            </div>
+        </div><!--p1-->
+
+    </div>
+    <!--port-content end-->
+</section>
+
 
 </body>
 </html>
