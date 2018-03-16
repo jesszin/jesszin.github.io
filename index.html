@@ -20,18 +20,25 @@
 
 
     <link rel="shortcut icon" href="img/favicon-32x32.png">
-    <link rel="stylesheet" href="css/fonts.css">
+    <!--<link rel="stylesheet" href="css/fonts.css">-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/remodal-default-theme.css">
+
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fontfaceobserver/2.0.8/fontfaceobserver.js"></script>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
+
+    <script src="js/remodal.js"></script>
+
     <script src="js/index.js"></script>
+    <script src="js/modal.js"></script>
     <script>
         WebFont.load({
             google: {
@@ -95,15 +102,15 @@
                     <b>신규 구축</b> 및 <b>리뉴얼 업무</b>에 참여하였습니다.</p>
                 <h5>Web homepage</h5>
                 <ul class="port-list">
-                    <li class="p1">
-                        <a href="#" class="page">
+                    <li class="p1" id="p1">
+                        <a href="#p1-modal">
                             <div class="port-overlay">
                                 <p class="p1-mt">MODERNTIMES</p>
                             </div>
                         </a>
                     </li>
                 <li class="p2">
-                    <a href="#">
+                    <a href="#container">
                         <div class="port-overlay">
                             <p class="p2-nextin">NextIn</p>
                         </div>
@@ -177,29 +184,9 @@
         </nav>
     </div>
 
-    <div class="port-content modal">
-        <div class="p1-cotent">
-            <p>MODERNTIMES(Responisve web)</p>
-            <div class="p1-text">
-                <ul>
-                    <li>
-                        <b>기획의도</b>
-                        <p>인테리어에 관심이 생긴 뒤 가구 및 디자인을 보면서 구상한 홈페이지입니다.<br>
-                            현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 공간을 제작하는 회사를 디자인하였습니다.</p>
-                    </li>
-                    <li>
-                        <b>홈페이지의 로고 및 전체 디자인과 하드코딩을 하였습니다.</b>
-                        <p>
-                            <b>Tool</b> : Brackets . Photoshop . Illustrator
-                        </p>
-                    </li>
-                </ul>
-                <img src="img/jar.png" alt="moderntimes">
-            </div>
-        </div><!--p1-->
 
-    </div>
-    <!--port-content end-->
+
+
 </section>
 
 
