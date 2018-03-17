@@ -332,11 +332,22 @@ nav ul li a{
 #about{
     height: 100%;
     background:#fff;
+    margin-bottom:120px;
+    border-top:1px solid #dcdcdc;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-around;
+    max-width:70%;
+    margin:0 auto;
+}
+#about .about-content>div{
+    width: 48%;
 }
 
 #contact{
-    height: 20vh;
-    background:#ddd;
+    height: 100%;
+    background:rgb(242,242,242);
 }
 
 /*PORTFOLIO*/
@@ -344,6 +355,7 @@ nav ul li a{
 #portfolio h5{
     letter-spacing: 1px;
     padding:30px 0;
+    color:#333;
 }
  #portfolio h3{
     font-size:30px;
@@ -529,4 +541,144 @@ nav ul li a{
     margin-right:20px;
 }
 /* ABOUT*/
+#about>h3{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 35px;
+    color:#333;
+    text-align: center;
+    padding-top:120px;
+}
+#about>h3::after{
+    display: block;
+    content:"";
+    background:#f24971;
+    width:30px;
+    height: 7px;
+    margin:20px auto;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+#about>img{
+    max-width: 120px;
+    height: auto;
+    display:block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    padding:4px;
+    border:1px solid #ddd;
+    margin:10px auto 30px;
+}
+#about .about-content{
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing: 1px;
+}
+#about .about-content .about-info{
+    color:#333;
+    line-height: 23px;
+}
+#about .about-content .about-info p,
+#about .about-content .about-skill p{
+    font-size: 15px;
+}
+#about .about-content .about-info p>span{
+    font-weight: 600;
+    color:#f24971;
+}
+#about .about-content .about-info .tool h5{
+    font-size: 15px;
+    margin-bottom:5px;
+}
+#about .about-content .about-info .tool ul{
+    width: 100%;
+    display: flex;
+}
+#about .about-content .about-info .tool ul li{
+    margin-right:1%;
+}
+#about .about-content .about-skill{
+    line-height: 20px;
+}
+#about .about-content .about-skill p span{
+    font-weight: 600;
+    color:#f24971;
+}
+#about .about-content .about-skill .top{
+    margin-top:10px;
+}
 
+/*contact*/
+#contact h5{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    color:#7a7a7a;
+    text-align: center;
+    padding-top:50px;
+}
+#contact ul{
+    max-width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin:30px auto;
+}
+#contact ul li{
+    width: 48%;
+    color:#7a7a7a;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#contact ul li:first-child p b{
+    font-size: 17px;
+    line-height: 30px;
+}
+#contact ul li:first-child p{
+    font-size: 15px;
+    line-height: 20px;
+}
+#contact ul li:last-child>p{
+    font-size: 17px;
+    font-weight: bold;
+}
+#contact form{
+    color:#7a7a7a;
+}
+#contact form fieldset{
+    border:0 none;
+}
+#contact form fieldset input{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    border:1px solid #dcdcdc;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:10px;
+    color:#555;
+    margin-bottom:10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#contact form fieldset textarea{
+    display: block;
+    width: 100%;
+    max-width: 350px;
+    height: 170px;
+    border:1px solid #dcdcdc;
+    padding:10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom:4px;
+    color:#555;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#contact .send-btn{
+    padding:15px 0;
+    font-weight: 600;
+}
