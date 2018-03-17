@@ -1,0 +1,7 @@
+.modal{
+    max-width: 50% !important;
+    width:50%! !important;
+}
+.blocker{
+    z-index:50 !important;
+}

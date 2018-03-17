@@ -234,33 +234,6 @@ nav ul li a{
     border-top:1px solid #dcdcdc;
     position: relative;
 }
-#container .modal{
-    display: none;
-    width: 100%;
-    height: 100%;
-    padding-top:7%;
-    position: absolute;
-    left: 0;
-    top:0;
-    overflow: auto;
-    background: rgba(0,0,0,0.4);
-    z-index:9999;
-}
-#container .modal-content{
-    background:#fefefe;
-    width: 45%;
-    border:1px solid #888;
-    padding:0 30px 30px;
-    margin:auto;
-}
-#container .modal-content .p-text ul{
-    display: flex;
-    justify-content: space-around;
-}
-#container .modal-content .p-text ul li{
-    width: 49%;
-}
-
 /*layout-sidebar*/
 .side-bar{
     width: 18%;
@@ -357,8 +330,8 @@ nav ul li a{
 }
 
 #about{
-    height: 100vh;
-    background:#99f;
+    height: 100%;
+    background:#fff;
 }
 
 #contact{
@@ -467,74 +440,93 @@ nav ul li a{
     color:#dcdcdc;
     border-top:3px solid #dcdcdc;
     border-bottom: 3px solid #dcdcdc;
+    z-index:11;
 }
 
 /*portfolio modal*/
 .modal-close{
-    color:#aaa;
+    display: inline-block;
     float: right;
-    margin-top:1%;
-    margin-right: 1%;
-    font-size: 35px;
-    font-weight: bold;
-}
-.port-content .modal-content .modal-close:hover,
-.port-content .modal-content .modal-close:focus{
-    color:#000;
-    cursor: pointer;
-    -webkit-transition: all 0.2s cubic-bezier(0,0,0.580,1);
-    -moz-transition: all 0.2s cubic-bezier(0,0,0.580,1);
-    -ms-transition: all 0.2s cubic-bezier(0,0,0.580,1);
-    -o-transition: all 0.2s cubic-bezier(0,0,0.580,1);
-    transition: all 0.2s cubic-bezier(0,0,0.580,1);
-}
-.port-content .modal-content>p{
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-    margin:60px 0 30px;
-}
-.port-content .modal-content .p-text{
-    font-family: 'Nanum Gothic', sans-serif;
+    padding:6px 10px;
+    color:#333;
+    background:#fff;
+    border:1px solid #ccc;
     font-size: 14px;
-    overflow-x:hidden;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-top:10px;
+}
+.modal-close:hover,
+.modal-close:focus{
+    border-color:#adadad;
+    background:#e6e6e6;
+}
+.modal-content{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+.modal-content h5{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin:20px 0 20px;
+}
+.modal-content img{
+    width: 100%;
+}
+.modal-content ul{
+    display: flex;
+    justify-content: space-around;
+}
+.modal-content ul li{
+    width: 48%;
+}
+.modal-content ul li mark{
+    background:transparent;
+}
+.modal-content ul li mark>a{
+    font-size: 17px;
+    color:#bbb;
+}
+.modal-content ul li p{
+    font-size: 15px;
+    line-height: 20px;
+}
+.modal-content ul li b{
+    letter-spacing: 1px;
+    font-size:17px;
     line-height: 25px;
 }
-.port-content .modal-content .p-text b{
-    font-size: 16px!important;
-}
-.port-content .modal-content .p-text img{
-    margin:20px auto;
-    display: block;
-
-}
-.port-content .modal-content .p-text .modal-click{
+.modal-content ul li:last-child a{
     display: inline-block;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    color:#f24971;
     text-align: center;
+    color: #f24971;
     letter-spacing: 1px;
     white-space: nowrap;
-    font-size: 15px;
-    border:4px solid #f24971;
+    padding:8px 14px;
+    border:3px solid #f24971;
     -webkit-border-radius: 6px;
     -moz-border-radius: 6px;
     border-radius: 6px;
-    padding:8px 14px;
-    transition: all 0.1s linear;
-    -webkit-transition: all 0.1s linear;
-    -moz-transition: all 0.1s linear;
-    -o-transition: all 0.1s linear;
+    -webkit-transition:all 200ms linear;
+    -moz-transition:all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition:all 200ms linear;
+    transition: all 200ms linear;
 }
-.port-content .modal-content .p-text .modal-click:hover{
+.modal-content ul li:last-child a:hover{
     background:#f24971;
     color:#fff;
 }
-.port-content .modal-content .p-text .right{
-    margin-right: 20px;
+.modal-content ul li:last-child .right{
+    margin-right:20px;
 }
 /* ABOUT*/
 

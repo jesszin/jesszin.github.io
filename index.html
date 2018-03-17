@@ -24,8 +24,8 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/jquery.bxslider.css">
-    <link rel="stylesheet" href="css/remodal-default-theme.css">
-
+    <link rel="stylesheet" href="css/modaledit.css">
+    <link rel="stylesheet" href="css/jquery.modal.css">
 
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -34,20 +34,13 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-
-    <script src="js/remodal.js"></script>
-
+    <script src="js/jquery.modal.js"></script>
     <script src="js/index.js"></script>
-    <script src="js/modal.js"></script>
     <script>
-        WebFont.load({
-            google: {
-                families: ['Alegreya Sans SC', 'Open Sans', 'Nanum Gothic']
-            }
+        $("[class^="ex"]").modal({
+            fadeDuration: 70
         });
     </script>
-
-
 </head>
 <body>
 <section id="main">
@@ -100,58 +93,209 @@
                     Ionic 기반으로 node.js . angular.js 사용한 모바일웹 제작 및 부트스트랩 modal을 이용한 홈페이지 제작과<br>
                     데이터 시각화(data visualization) 프로젝트 외
                     <b>신규 구축</b> 및 <b>리뉴얼 업무</b>에 참여하였습니다.</p>
+
                 <h5>Web homepage</h5>
-                <ul class="port-list">
-                    <li class="p1" id="p1">
-                        <a href="#p1-modal">
+                <ul class="port-list remodal-bg">
+                    <li class="p1">
+                        <a href="#ex1" rel="modal:open">
                             <div class="port-overlay">
                                 <p class="p1-mt">MODERNTIMES</p>
                             </div>
                         </a>
+
+                        <div id="ex1" class="modal modal-content">
+                            <h5>MODERN TIMES(Responsive Web)</h5>
+                            <ul>
+                                <li>
+                                    <b>기획의도</b><br>
+                                    <p>인테리어에 관심이 생긴 뒤 가구 및 디자인을 보면서 <br>구상한 홈페이지입니다.<br>
+                                        현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 <br>공간을 제작하는 회사를 디자인하였습니다.</p>
+                                </li>
+                                <li>
+                                    <b>홈페이지의 로고 및 전체 디자인과 퍼블리싱</b>
+                                    <p>
+                                        Tool : Brackets . Photoshop . Illustrator<br>
+                                        <br>
+                                        <a href="http://moderntimes.dothome.co.kr/index/" target="_blank" class="modal-click right">홈페이지</a>
+                                        <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-click">기획서</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <br>
+                            <img src="img/content-mt.png" alt="moderntimes">
+                            <a href="#" class="modal-close" rel="modal:close">Close</a>
+                        </div>
+                        <!--ex1 end-->
+
                     </li>
                 <li class="p2">
-                    <a href="#container">
+                    <a href="#ex2" rel="modal:open">
                         <div class="port-overlay">
                             <p class="p2-nextin">NextIn</p>
                         </div>
                     </a>
+
+                    <div id="ex2" class="modal modal-content">
+                        <h5>NEXT-IN</h5>
+                        <ul>
+                            <li>
+                                <b>기획의도</b><br>
+                                <p>방영 예정 드라마 '리치맨'의 가상 홈페이지 <mark><a href="http://dramax.ihq.co.kr/nextin/" target="_blank">리치맨</a></mark>의 홈페이지는
+                                    table형식으로만 마크업 되어있기 때문에<br>
+                                    웹 표준 준수한 마크업 및 디자인을 하였습니다.</p>
+                            </li>
+                            <li>
+                                <b>홈페이지의 로고 및 전체 디자인과 퍼블리싱</b>
+                                <p>
+                                    Tool : Intellij . Photoshop . Illustrator<br>
+                                    Graph : D3.js
+                                    <br>
+                                    <br>
+                                    <a href="http://jinaruniverse.dothome.co.kr/next-in/" target="_blank" class="modal-click right">홈페이지</a>
+                                    <!--<a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-click">기획서</a>-->
+                                </p>
+                            </li>
+                        </ul>
+                        <br>
+                        <img src="img/content-ni.png" alt="next-in">
+                        <a href="#" class="modal-close" rel="modal:close">Close</a>
+                    </div>
+
                 </li>
                 <li class="p3">
-                    <a href="#">
+                    <a href="#ex3" rel="modal:open">
                         <div class="port-overlay">
                             <p class="p3-portfolio">PORTFOLIO</p>
                         </div>
                     </a>
+
+                    <div id="ex3" class="modal modal-content">
+                        <h5>Portfolio(Responsive Web)</h5>
+                        <ul>
+                            <li>
+                                <b>기획의도</b><br>
+                                <p>제가 제작한 웹페이지 및 참여한 포트폴리오를 보신 뒤,<br>
+                                저에 대한 정보를 접할 수 있는 구조로 구성하였습니다.</p>
+                            </li>
+                            <li>
+                                <b>홈페이지의 로고 및 전체 디자인과 퍼블리싱</b>
+                                <p>
+                                    Tool : Intellij . Photoshop . Illustrator<br>
+                                    <br>
+                                    <!--<a href="http://jinaruniverse.dothome.co.kr/next-in/" target="_blank" class="modal-click right">홈페이지</a>-->
+                                    <!--<a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-click">기획서</a>-->
+                                </p>
+                            </li>
+                        </ul>
+                        <br>
+                        <img src="img/content-portfolio.png" alt="portfolio">
+                        <a href="#" class="modal-close" rel="modal:close">Close</a>
+                    </div>
+                    <!--ex3 end-->
                 </li>
                 </ul>
                 <h5>Project</h5>
                 <ul class="port-list">
                     <li class="p4">
-                        <a href="#">
+                        <a href="#ex4" rel="modal:open">
                             <div class="port-overlay">
                                 <p class="p4-peter">PETER</p>
                             </div>
                         </a>
+
+                        <div id="ex4" class="modal modal-content">
+                            <h5>PETER (Mobile Web)</h5>
+                            <ul>
+                                <li>
+                                    <b>기획의도</b><br>
+                                    <p>인테리어에 관심이 생긴 뒤 가구 및 디자인을 보면서 <br>구상한 홈페이지입니다.<br>
+                                        현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 <br>공간을 제작하는 회사를 디자인하였습니다.</p>
+                                </li>
+                                <li>
+                                    <b>홈페이지의 로고 및 전체 디자인과 퍼블리싱</b>
+                                    <p>
+                                        Tool : Brackets . Photoshop . Illustrator<br>
+                                        <br>
+                                        <a href="http://moderntimes.dothome.co.kr/index/" target="_blank" class="modal-click right">홈페이지</a>
+                                        <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-click">기획서</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <br>
+                            <img src="img/thumb-pt.png" alt="peter">
+                            <a href="#" class="modal-close" rel="modal:close">Close</a>
+                        </div>
+                        <!--ex4 end-->
                     </li>
                     <li class="p5">
-                        <a href="#">
+                        <a href="#ex5" rel="modal:open">
                             <div class="port-overlay">
                                 <p class="p5-ngo">NGO</p>
                             </div>
                         </a>
+
+                        <div id="ex5" class="modal modal-content">
+                            <h5>NGO(Bootstrap Modal)</h5>
+                            <ul>
+                                <li>
+                                    <b>기획의도</b><br>
+                                    <p>인테리어에 관심이 생긴 뒤 가구 및 디자인을 보면서 <br>구상한 홈페이지입니다.<br>
+                                        현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 <br>공간을 제작하는 회사를 디자인하였습니다.</p>
+                                </li>
+                                <li>
+                                    <b>홈페이지의 로고 및 전체 디자인과 퍼블리싱</b>
+                                    <p>
+                                        Tool : Brackets . Photoshop . Illustrator<br>
+                                        <br>
+                                        <a href="http://moderntimes.dothome.co.kr/index/" target="_blank" class="modal-click right">홈페이지</a>
+                                        <!--<a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-click">기획서</a>-->
+                                    </p>
+                                </li>
+                            </ul>
+                            <br>
+                            <img src="img/thumb-ngo.png" alt="ngo">
+                            <a href="#" class="modal-close" rel="modal:close">Close</a>
+                        </div>
+                        <!--ex5 end-->
+
                     </li>
                     <li class="p6">
-                        <a href="#">
+                        <a href="#ex6" rel="modal:open">
                             <div class="port-overlay">
                                 <p class="p6-wise">DataVisualization</p>
                             </div>
                         </a>
+
+                        <div id="ex6" class="modal modal-content">
+                            <h5>Wise (Data Visualization)</h5>
+                            <ul>
+                                <li>
+                                    <b>기획의도</b><br>
+                                    <p>인테리어에 관심이 생긴 뒤 가구 및 디자인을 보면서 <br>구상한 홈페이지입니다.<br>
+                                        현대인의 공간에 휴식을 넘어 개인이 원하는 분위기를 반영한 <br>공간을 제작하는 회사를 디자인하였습니다.</p>
+                                </li>
+                                <li>
+                                    <b>홈페이지의 로고 및 전체 디자인과 퍼블리싱</b>
+                                    <p>
+                                        Tool : Brackets . Photoshop . Illustrator<br>
+                                        <br>
+                                        <a href="http://moderntimes.dothome.co.kr/index/" target="_blank" class="modal-click right">홈페이지</a>
+                                        <a href="https://drive.google.com/open?id=0B1Tox1e32K5GQU5CMzBIY3FjWHc" target="_blank" class="modal-click">기획서</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <br>
+                            <img src="img/thumb-wise.png." alt="datavisualization">
+                            <a href="#" class="modal-close" rel="modal:close">Close</a>
+                        </div>
+                        <!--ex6 end-->
                     </li>
                 </ul>
+
             </div>
             <!--portfolio end-->
             <div id="about">
-                2
+                2d
             </div>
             <!--about end-->
             <div id="contact">
@@ -164,8 +308,7 @@
         </div>
     </div>
     <div class="side-bar">
-        <a href="http://github.com/jesszin" target="_blank" class="side-logo"><img src="img/sidebar.png"
-                                                                                   alt="signature"></a>
+        <a href="http://github.com/jesszin" target="_blank" class="side-logo"><img src="img/sidebar.png" alt="signature"></a>
         <nav>
             <ul>
                 <li>
