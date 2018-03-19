@@ -43,7 +43,7 @@ nav ul li a{
     font-size: 35px;
     letter-spacing: 2px;
     position: absolute;
-    top:-10%;
+    top:-15%;
     left:50%;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -310,6 +310,16 @@ nav ul li a{
 .side-bar ul li a.active::after{
     width: 10%;
 }
+/*sidebar edit*/
+.side-bar .copy{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    width:100%;
+    position:absolute;
+    bottom:1%;
+    text-align: center;
+}
 
 
 .intro-page{
@@ -348,6 +358,7 @@ nav ul li a{
 #contact{
     height: 100%;
     background:rgb(242,242,242);
+    padding-bottom:20px;
 }
 
 /*PORTFOLIO*/
@@ -624,66 +635,16 @@ nav ul li a{
     margin:30px auto;
 }
 #contact ul li{
-    width: 48%;
+    width: 29%;
     color:#7a7a7a;
+    text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
 }
-#contact ul li:first-child p b{
-    font-size: 17px;
-    line-height: 30px;
+#contact ul li img{
+    display: inline-block;
+    margin-bottom:15px;
 }
-#contact ul li:first-child p{
-    font-size: 15px;
-    line-height: 20px;
-}
-#contact ul li:last-child>p{
-    font-size: 17px;
-    font-weight: bold;
-}
-#contact form{
-    color:#7a7a7a;
-}
-#contact form fieldset{
-    border:0 none;
-}
-#contact form fieldset input{
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    border:1px solid #dcdcdc;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    padding:10px;
-    color:#555;
-    margin-bottom:10px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-#contact form fieldset textarea{
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    height: 170px;
-    border:1px solid #dcdcdc;
-    padding:10px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom:4px;
-    color:#555;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-#contact .send-btn{
-    padding:15px 0;
+#contact ul li .subject{
     font-weight: 600;
-}
-.font{
-    font-weight: bold;
-    color:#f24971;
+    font-size: 20px;
 }
