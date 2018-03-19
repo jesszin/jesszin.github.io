@@ -498,15 +498,16 @@ nav ul li a{
     width: 48%;
 }
 .modal-content ul li mark{
-    background:transparent;
+    background:#fcf8e3;
 }
 .modal-content ul li mark>a{
     font-size: 17px;
-    color:#bbb;
+    color:#000;
+    font-weight: 600;
 }
 .modal-content ul li p{
     font-size: 15px;
-    line-height: 20px;
+    line-height: 21px;
 }
 .modal-content ul li b{
     letter-spacing: 1px;
