@@ -73,6 +73,7 @@ nav ul li a{
 #main .main-page .comment{
     top:85%;
     display: none;
+    width:100%;
 }
 #main .main-page .click{
     display: inline-block;
@@ -143,6 +144,7 @@ nav ul li a{
     background:#f4efef;
 }
 /*main-right*/
+/*main slide*/
 #main .main-page-right .slideWrap{
     max-width: 100%;
     width: 50%;
@@ -173,6 +175,7 @@ nav ul li a{
     font-family: 'Nanum Gothic', sans-serif;
     margin-top:7px
 }
+
 /*main-right bxslide css edit*/
 .bx-wrapper{
     background: transparent!important;
@@ -235,53 +238,34 @@ nav ul li a{
     position: relative;
 }
 /*layout-sidebar*/
-.side-bar{
-    width: 18%;
-    height: 100%;
-    position: absolute;
-    right:0;
-    top:0;
-    border-left: 1px solid #dcdcdc;
-    overflow: hidden;
-}
+
 .side-bar.fixed{
     position: fixed;
     height: 100%;
+    top:0;
 }
-.side-bar .side-logo{
-    display: block;
-    width: 100%;
+.mobile-bar.fixed{
+    position: fixed;
+    height: 100%;
+    top:0;
 }
-.side-bar .side-logo::after{
-    display: block;
-    content: "";
-    width: 15px;
-    height: 5px;
-    margin:40px auto 10px;
-    background:#f24971;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-}
-.side-bar .side-logo img{
-    display: block;
-    width: 60px;
-    margin:0 auto;
-    padding:30px 0 15px;
-}
-.side-bar ul{
+
+.pc-bar .pc-nav ul,
+.mobile-bar .mobile-nav ul{
     width: 100%;
     height: 100%;
     position: relative;
 }
-.side-bar ul li{
+.pc-bar .pc-nav ul li,
+.mobile-bar .mobile-nav ul li{
     width: 100%;
     position: relative;
 }
-.side-bar ul li a{
-    font-size: 18px;
+.pc-bar .pc-nav ul li a,
+.mobile-bar .mobile-nav ul li a{
+    font-size: 1.15rem;
 }
-.side-bar ul li a::after{
+.pc-bar .pc-nav ul li a::after{
     position: absolute;
     left:50%;
     transform:translateX(-50%);
@@ -300,26 +284,18 @@ nav ul li a{
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-.side-bar ul li a:hover::after{
+.pc-bar .pc-nav ul li a:hover::after{
     width:10%;
 }
-.side-bar ul li a.active{
+.pc-bar ul li a.active,
+.mobile-bar .mobile-nav ul li a:hover{
     /*background:#dcdcdc;*/
     color:#f24971;
 }
-.side-bar ul li a.active::after{
+.pc-bar ul li a.active::after{
     width: 10%;
 }
 /*sidebar edit*/
-.side-bar .copy{
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 13px;
-    letter-spacing: 1px;
-    width:100%;
-    position:absolute;
-    bottom:1%;
-    text-align: center;
-}
 
 
 .intro-page{
@@ -333,11 +309,6 @@ nav ul li a{
     position: relative;
 }
 
-#portfolio{
-    /*position: relative;*/
-    padding: 50px;
-    margin-bottom:150px;
-}
 
 #about{
     height: 100%;
@@ -346,15 +317,8 @@ nav ul li a{
     border-top:1px solid #dcdcdc;
 }
 #about .about-content{
-    display: flex;
-    justify-content: space-around;
-    max-width:70%;
     margin:0 auto;
 }
-#about .about-content>div{
-    width: 48%;
-}
-
 #contact{
     height: 100%;
     background:rgb(242,242,242);
@@ -369,7 +333,7 @@ nav ul li a{
     color:#333;
 }
  #portfolio h3{
-    font-size:30px;
+    font-size:2rem;
      font-family: 'Alegreya Sans SC', sans-serif;
 }
 #portfolio h3::before{
@@ -384,22 +348,18 @@ nav ul li a{
 }
 #portfolio h5{
     font-family: 'Varela Round', sans-serif;
-    font-size: 22px;
+    font-size:1.4rem;
 }
 #portfolio p{
     font-family: 'Nanum Gothic', sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     line-height: 25px;
 }
 #portfolio>ul{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
 }
 #portfolio .port-list li{
     /*width: 450px;*/
-    width: 31%;
-    height: 350px;
     position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -558,7 +518,6 @@ nav ul li a{
     font-size: 35px;
     color:#333;
     text-align: center;
-    padding-top:120px;
 }
 #about>h3::after{
     display: block;
@@ -590,10 +549,7 @@ nav ul li a{
     color:#333;
     line-height: 23px;
 }
-#about .about-content .about-info p,
-#about .about-content .about-skill p{
-    font-size: 15px;
-}
+
 #about .about-content .about-info p>span{
     font-weight: 600;
     color:#f24971;
@@ -623,20 +579,13 @@ nav ul li a{
 /*contact*/
 #contact h5{
     font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
+    font-size: 2rem;
     color:#7a7a7a;
     text-align: center;
-    padding-top:50px;
-}
-#contact ul{
-    max-width: 60%;
-    display: flex;
-    justify-content: space-around;
-    margin:30px auto;
 }
 #contact ul li{
-    width: 29%;
     color:#7a7a7a;
+    font-size: 0.95rem;
     text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
 }
@@ -646,5 +595,5 @@ nav ul li a{
 }
 #contact ul li .subject{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.2rem;
 }

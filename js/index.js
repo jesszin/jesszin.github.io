@@ -31,7 +31,7 @@ $(function(){
         $('.nav-btn').fadeIn(300);
         $('.click').fadeIn(300);
         $('.author').animate({
-            top:"-10%"
+            top:"-15%"
         });
         $('.tag').hide();
         $('.close').hide();
@@ -56,12 +56,18 @@ $(window).load( function() {
         else if ( scrollT < sbOffset ) {
             $('.side-bar').removeClass("fixed");
         };
+        if ( scrollT  >= sbOffset ) {
+            $('.mobile-bar').addClass("fixed");
+        }
+        else if ( scrollT =< sbOffset ) {
+            $('.mobile-bar').removeClass("fixed");
+        };
 
         if ( scrollT >= $("#main").offset().top ) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".home").addClass("active");
         };
-        if ( scrollT >= $("#portfolio").offset().top - 100 ) {
+        if ( scrollT >= $("#portfolio").offset().top ) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".portfolio").addClass("active");
         };
@@ -171,3 +177,28 @@ $(function(){
 
 });//portfolio hover
 
+//mobile nav
+$(document).ready(function (e) {
+    function t(t) {
+        e(t).bind("click", function (t) {
+            t.preventDefault();
+            e(this).parent().fadeOut()
+        })
+    }
+    e(".menuWrap").click(function () {
+        var t = e(this).parents(".mobile-nav ul").children(".mobile-nav ul").is(":hidden");
+        e(".menuWrap .mobile-nav ul").hide();
+        e(".button-dropdown .dropdown-toggle").removeClass("active");
+        if (t) {
+            e(this).parents(".button-dropdown").children(".dropdown-menu").toggle().parents(".button-dropdown").children(".dropdown-toggle").addClass("active")
+        }
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-menu").hide();
+    });
+    e(document).bind("click", function (t) {
+        var n = e(t.target);
+        if (!n.parents().hasClass("button-dropdown")) e(".button-dropdown .dropdown-toggle").removeClass("active");
+    })
+});

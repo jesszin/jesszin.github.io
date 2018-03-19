@@ -4,4 +4,5 @@
 }
 .blocker{
     z-index:50 !important;
+    box-sizing:none !important;
 }
