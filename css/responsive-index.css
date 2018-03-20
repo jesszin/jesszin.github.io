@@ -45,11 +45,8 @@
         width: 29%;
     }
     /*sidebar*/
-    .mobile-bar{
-        display: none;
-    }
-    .pc-bar{
-        width: 18%;
+    .side-bar{
+        width: 18%!important;
         height: 100%;
         position: absolute;
         right:0;
@@ -57,11 +54,11 @@
         border-left: 1px solid #dcdcdc;
         overflow: hidden;
     }
-    .pc-bar .side-logo{
+    .side-bar .side-logo{
         display: block;
         width: 100%;
     }
-    .pc-bar .side-logo::after{
+    .side-bar .side-logo::after{
         display: block;
         content: "";
         width: 15px;
@@ -72,13 +69,13 @@
         -moz-border-radius: 10px;
         border-radius: 10px;
     }
-    .pc-bar .side-logo img{
+    .side-bar .side-logo img{
         display: block;
         width: 60px;
         margin:0 auto;
         padding:30px 0 15px;
     }
-    .pc-bar .copy{
+    .side-bar .copy{
         font-family: 'Alegreya Sans SC', sans-serif;
         font-size: 13px;
         letter-spacing: 1px;

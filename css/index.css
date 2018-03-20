@@ -239,32 +239,24 @@ nav ul li a{
 /*layout-sidebar*/
 
 .side-bar.fixed{
-    position: fixed;
-    height: 100%;
-    top:0;
-}
-.mobile-bar.fixed{
-    position: fixed;
-    height: 100%;
-    top:0;
+    position: fixed!important;
+    height: 100%!important;
+    top:0!important;
 }
 
-.pc-bar .pc-nav ul,
-.mobile-bar .mobile-nav ul{
+.side-bar ul{
     width: 100%;
     height: 100%;
     position: relative;
 }
-.pc-bar .pc-nav ul li,
-.mobile-bar .mobile-nav ul li{
+.side-bar ul li{
     width: 100%;
     position: relative;
 }
-.pc-bar .pc-nav ul li a,
-.mobile-bar .mobile-nav ul li a{
+.side-bar ul li a{
     font-size: 1.15rem;
 }
-.pc-bar .pc-nav ul li a::after{
+.side-bar ul li a::after{
     position: absolute;
     left:50%;
     transform:translateX(-50%);
@@ -283,15 +275,14 @@ nav ul li a{
     -o-transition: 0.2s;
     transition: 0.2s;
 }
-.pc-bar .pc-nav ul li a:hover::after{
+.side-bar ul li a:hover::after{
     width:10%;
 }
-.pc-bar ul li a.active,
-.mobile-bar .mobile-nav ul li a:hover{
+.side-bar ul li a.active{
     /*background:#dcdcdc;*/
     color:#f24971;
 }
-.pc-bar ul li a.active::after{
+.side-bar ul li a.active::after{
     width: 10%;
 }
 /*sidebar edit*/
