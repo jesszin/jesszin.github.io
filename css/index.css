@@ -357,7 +357,6 @@ nav ul li a{
     -webkit-background-size: cover;
     background-size: cover!important;
     background-repeat: no-repeat!important;
-    background-position: center center !important;
     border:1px solid #dcdcdc;
 }
 #portfolio ul li a{
