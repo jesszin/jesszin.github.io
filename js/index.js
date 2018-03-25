@@ -44,16 +44,16 @@ $(function(){
 });//close animation
 
 $(window).load( function() {
-    var sbOffset = $('#container').offset().top;
+    var sideOffset = $('#container').offset().top;
 
     $(window).scroll(function(){
-        var sbOffset = $('#container').offset().top;
+        var sideOffset = $('#container').offset().top;
         var scrollT = $(window).scrollTop();
 
-        if ( scrollT  > sbOffset ) {
+        if ( scrollT  > sideOffset ) {
             $('.side-bar').addClass("fixed");
         }
-        else if ( scrollT < sbOffset ) {
+        else if ( scrollT < sideOffset ) {
             $('.side-bar').removeClass("fixed");
         };
 
@@ -61,11 +61,11 @@ $(window).load( function() {
             $('.side-bar nav ul li a').removeClass("active");
             $(".home").addClass("active");
         };
-        if ( scrollT >= $("#portfolio").offset().top ) {
+        if ( scrollT >= $("#portfolio").offset().top) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".portfolio").addClass("active");
         };
-        if ( scrollT >= $("#about").offset().top - 100) {
+        if ( scrollT >= $("#about").offset().top - 50) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".about").addClass("active");
         };
@@ -79,7 +79,7 @@ $(window).load( function() {
 
 $(function() {
     $('a.scroll').bind('click', function(event) {
-        if ( $(window).width() < 870 ){
+        if ( $(window).width() < 850 ){
             var $anchor = $(this);
             $('html, body').stop().animate({
                 scrollTop: $($anchor.attr('href')).offset().top - 10
