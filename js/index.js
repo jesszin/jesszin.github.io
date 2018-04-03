@@ -44,37 +44,35 @@ $(function(){
 });//close animation
 
 $(window).load( function() {
-    var sideOffset = $('#container').offset().top;
-
     $(window).scroll(function(){
-        var sideOffset = $('#container').offset().top;
-        var scrollT = $(window).scrollTop();
+        var sidebar = $('#container').offset().top;
+        var scrolltb = $(window).scrollTop();
 
-        if ( scrollT  > sideOffset ) {
+        if ( scrolltb  > sidebar ) {
             $('.side-bar').addClass("fixed");
         }
-        else if ( scrollT < sideOffset ) {
+        else if ( scrolltb < sidebar ) {
             $('.side-bar').removeClass("fixed");
         };
 
-        if ( scrollT >= $("#main").offset().top ) {
+        if ( scrolltb >= $("#main").offset().top ) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".home").addClass("active");
         };
-        if ( scrollT >= $("#portfolio").offset().top) {
+        if ( scrolltb >= $("#portfolio").offset().top) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".portfolio").addClass("active");
         };
-        if ( scrollT >= $("#about").offset().top - 50) {
+        if ( scrolltb >= $("#about").offset().top - 50) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".about").addClass("active");
         };
-        if ( scrollT >= $("#contact").offset().top - 600) {
+        if ( scrolltb >= $("#contact").offset().top - 600) {
             $('.side-bar nav ul li a').removeClass("active");
             $(".contact").addClass("active");
         };
     });
-});//side-bar
+});//sidebar
 
 
 $(function() {
